@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Book a free 30-minute consultation call with Guided Tech Solutions." />
-  <meta name="keywords" content="Guided Tech Solutions, book a call, consultation, Google Meet, tech strategy" />
-  <meta name="author" content="Guided Tech Solutions" />
 
-  <title>Book a Call — Guided Tech Solutions</title>
+<!-- 1. CHARACTER SET & VIEWPORT -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="shortcut icon" href="asset/logo-icon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<!-- 2. CANONICAL URL -->
+<link rel="canonical" href="https://www.guidedtechms.com/book.html" />
 
-  <!-- All styles in one file -->
-  <link rel="stylesheet" href="styles/book.css" />
+<!-- 3. PRIMARY META TAGS -->
+<title>Book a Free IT & Technology Consultation | Guided Tech Solutions</title>
+<meta name="description" content="Book a free 30-minute strategy call with Guided Tech Solutions. Speak directly with our technology consultants about IT support, automation, AI, or cloud migration for your business. No commitment required." />
+<meta name="keywords" content="book IT consultation, free technology strategy call, IT support consultation, AI consulting call, business automation consultation, schedule a call, tech strategy session, Guided Tech Solutions booking" />
+<meta name="author" content="Guided Tech Solutions" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<!-- 4. OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.guidedtechms.com/book.html" />
+<meta property="og:title" content="Book a Free IT & Technology Consultation | Guided Tech Solutions" />
+<meta property="og:description" content="Book a free 30-minute strategy call with our senior technology consultants. Get a tailored action plan for IT support, automation, AI, or cloud migration. No commitment required." />
+<meta property="og:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Guided Tech Solutions" />
+<meta property="og:locale" content="en_US" />
+
+<!-- 5. TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.guidedtechms.com/book.html" />
+<meta name="twitter:title" content="Book a Free IT & Technology Consultation | Guided Tech Solutions" />
+<meta name="twitter:description" content="Free 30-minute strategy call with our technology consultants. Get a clear action plan for your business — no commitment required." />
+<meta name="twitter:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+
+<!-- 6. FAVICON -->
+<link rel="icon" type="image/png" href="/asset/logo-icon.png" />
+<link rel="apple-touch-icon" href="/asset/logo-icon.png" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="styles/book.css" />
+
+<!-- 7. JSON-LD — Service (Free Consultation) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Free Technology Strategy Consultation",
+  "url": "https://www.guidedtechms.com/book.html",
+  "description": "A free 30-minute strategy call with Guided Tech Solutions senior technology consultants. We listen, assess your business needs, and map out the right tech strategy covering IT support, automation, AI consulting, and cloud migration.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "name": "Free 30-Minute Strategy Call"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Guided Tech Solutions",
+    "url": "https://www.guidedtechms.com/",
+    "email": "info@guidedtechms.com",
+    "logo": "https://www.guidedtechms.com/asset/logo-icon.png"
+  }
+}
+</script>
+
+<!-- 8. JSON-LD — BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.guidedtechms.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.guidedtechms.com/contact.html" },
+    { "@type": "ListItem", "position": 3, "name": "Book a Call", "item": "https://www.guidedtechms.com/book.html" }
+  ]
+}
+</script>
 </head>
+
 <body>
   <div class="page-wrapper">
 
@@ -27,7 +95,7 @@
           <span class="logo-text">Guided Tech Solutions</span>
         </a>
 
-        <nav class="navbar-menu" id="navbarMenu">
+        <nav class="navbar-menu" id="navbarMenu" aria-label="Main navigation">
           <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="Close menu">✕</button>
 
           <a href="index.html" class="nav-link">Home</a>
@@ -97,7 +165,7 @@
           </div>
 
           <div class="nav-item">
-            <a href="#" class="nav-link nav-parent active">Contact</a>
+            <a href="#" class="nav-link nav-parent active" aria-current="page">Contact</a>
             <div class="mega-dropdown">
               <div class="mega-col">
                 <h4>Get in Touch</h4>
@@ -129,214 +197,169 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-content container">
-        <div class="hero-title">
-          <p>Book a Call</p>
-        </div>
+        <div class="hero-title"><p>Book a Call</p></div>
         <p class="hero-subtitle">
-          Book an exclusive consultation tailored to your business goals.
+          Book a free consultation tailored to your business goals — no commitment required.
         </p>
-        <div class="breadcrumbs">
-          <a href="index.html">Home</a> › <span class="page">Contact</span> › <span class="subpage">Bookings</span>
-        </div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> › <a href="contact.html">Contact</a> › <span class="subpage">Book a Call</span>
+        </nav>
       </div>
     </section>
 
     <!-- BOOKING SECTION -->
-    <section class="booking-section">
-      <div class="container">
-        <div class="booking-grid">
+    <main>
+      <section class="booking-section" aria-label="Consultation booking">
+        <div class="container">
+          <div class="booking-grid">
 
-          <!-- LEFT: Info Panel -->
-          <aside class="booking-info">
+            <!-- LEFT: Info Panel -->
+            <aside class="booking-info" aria-label="Consultation details">
 
-            <div class="booking-badge">Accepting new consultations</div>
+              <div class="booking-badge">Accepting new consultations</div>
 
-            <h2>Schedule Your <span>Free Strategy Call</span></h2>
-            <p class="lead">
-              Pick a time that works for you. We'll meet on Google Meet for a focused 30-minute session — listening, assessing, and mapping out the right tech strategy for your business.
-            </p>
+              <h2>Schedule Your <span>Free Strategy Call</span></h2>
+              <p class="lead">
+                Pick a time that works for you. We'll meet on Google Meet for a focused 30-minute session — listening, assessing, and mapping out the right tech strategy for your business.
+              </p>
 
-            <ul class="booking-perks">
-              <li>
-                <div class="perk-icon">
-                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </div>
-                <div class="perk-text">
-                  <strong>30-Minute Free Session</strong>
-                  <span>No commitment — pure strategy and honest guidance.</span>
-                </div>
-              </li>
-              <li>
-                <div class="perk-icon">
-                  <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </div>
-                <div class="perk-text">
-                  <strong>Expert-Led Consultation</strong>
-                  <span>Speak directly with our senior technology consultants.</span>
-                </div>
-              </li>
-              <li>
-                <div class="perk-icon">
-                  <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                </div>
-                <div class="perk-text">
-                  <strong>Tailored Action Plan</strong>
-                  <span>Walk away with clear next steps specific to your situation.</span>
-                </div>
-              </li>
-              <li>
-                <div class="perk-icon">
-                  <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                </div>
-                <div class="perk-text">
-                  <strong>100% Confidential</strong>
-                  <span>Your info is never shared with any third parties.</span>
-                </div>
-              </li>
-            </ul>
-
-            <div class="info-divider"></div>
-
-            <div class="info-contact-row">
-              <a href="mailto:info@guidedtechms.com" class="info-contact-item">
-                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                info@guidedtechms.com
-              </a>
-              <a href="contact.html" class="info-contact-item">
-                <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                Send us a message instead
-              </a>
-            </div>
-
-            <div class="meet-card">
-              <div class="meet-logo-box">
-                <span class="meet-logo-letter">M</span>
-              </div>
-              <div class="meet-card-text">
-                <strong>Powered by Google Meet</strong>
-                <span>A secure video link is automatically sent to your email upon booking.</span>
-              </div>
-            </div>
-
-          </aside>
-
-          <!-- RIGHT: Booking Card -->
-          <div>
-            <div class="calendar-card">
-
-              <div class="calendar-card-header">
-                <div class="cal-header-left">
-                  <div class="cal-icon">
-                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <ul class="booking-perks">
+                <li>
+                  <div class="perk-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                  <div class="perk-text">
+                    <strong>30-Minute Free Session</strong>
+                    <span>No commitment — pure strategy and honest guidance.</span>
                   </div>
-                  <div class="cal-header-text">
-                    <strong>Book A Call</strong>
-                    <span>Free 30-minute strategy session</span>
+                </li>
+                <li>
+                  <div class="perk-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                  <div class="perk-text">
+                    <strong>Expert-Led Consultation</strong>
+                    <span>Speak directly with our senior technology consultants.</span>
                   </div>
-                </div>
-                <div class="cal-header-badge">Live Availability</div>
-              </div>
+                </li>
+                <li>
+                  <div class="perk-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                  <div class="perk-text">
+                    <strong>Tailored Action Plan</strong>
+                    <span>Walk away with clear next steps specific to your situation.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="perk-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                  <div class="perk-text">
+                    <strong>100% Confidential</strong>
+                    <span>Your info is never shared with any third parties.</span>
+                  </div>
+                </li>
+              </ul>
 
-              <!-- Booking CTA Body -->
-              <div class="booking-cta-body">
+              <div class="info-divider"></div>
 
-                <!-- Steps -->
-                <div class="booking-steps-row">
-                  <div class="booking-step">
-                    <div class="booking-step-num">1</div>
-                    <div class="booking-step-text">
-                      <strong>Click the button</strong>
-                      <span>Opens your live scheduling page</span>
-                    </div>
-                  </div>
-                  <div class="booking-step-divider">
-                    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-                  </div>
-                  <div class="booking-step">
-                    <div class="booking-step-num">2</div>
-                    <div class="booking-step-text">
-                      <strong>Pick your slot</strong>
-                      <span>Choose a date &amp; time that works</span>
-                    </div>
-                  </div>
-                  <div class="booking-step-divider">
-                    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-                  </div>
-                  <div class="booking-step">
-                    <div class="booking-step-num">3</div>
-                    <div class="booking-step-text">
-                      <strong>Get your Meet link</strong>
-                      <span>Sent to your inbox instantly</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Main CTA -->
-                <div class="booking-cta-center">
-                  <div class="booking-cta-icon-wrap">
-                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                  </div>
-                  <h3>Ready to get started?</h3>
-                  <p>Click below to view our live availability and lock in your free consultation. Takes less than 2 minutes.</p>
-                  <a
-                    href="https://calendar.app.google/depHYjZ9a5kjRgzZ7"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn-book-now"
-                  >
-                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    Book an Appointment
-                  </a>
-                  <p class="booking-cta-note">
-                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                    Secure · Free · No commitment required
-                  </p>
-                </div>
-
-              </div><!-- /booking-cta-body -->
-
-              <div class="calendar-card-footer">
-                <div class="cal-footer-note">
-                  <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                  Secure booking · Your data is never shared
-                </div>
-                <a href="https://calendar.app.google/depHYjZ9a5kjRgzZ7" target="_blank" rel="noopener" class="cal-open-link">
-                  Open in Google Calendar
-                  <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <div class="info-contact-row">
+                <a href="mailto:info@guidedtechms.com" class="info-contact-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  info@guidedtechms.com
+                </a>
+                <a href="contact.html" class="info-contact-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  Send us a message instead
                 </a>
               </div>
 
-            </div><!-- /calendar-card -->
+              <div class="meet-card">
+                <div class="meet-logo-box"><span class="meet-logo-letter">M</span></div>
+                <div class="meet-card-text">
+                  <strong>Powered by Google Meet</strong>
+                  <span>A secure video link is automatically sent to your email upon booking.</span>
+                </div>
+              </div>
 
-            <!-- How it Works -->
-            <div class="how-strip">
-              <div class="how-step">
-                <div class="how-step-num">1</div>
-                <div>
-                  <strong>Pick a Time Slot</strong>
-                  <span>Browse available dates and choose what works for you.</span>
+            </aside>
+
+            <!-- RIGHT: Booking Card -->
+            <div>
+              <div class="calendar-card">
+
+                <div class="calendar-card-header">
+                  <div class="cal-header-left">
+                    <div class="cal-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+                    <div class="cal-header-text">
+                      <strong>Book A Call</strong>
+                      <span>Free 30-minute strategy session</span>
+                    </div>
+                  </div>
+                  <div class="cal-header-badge">Live Availability</div>
+                </div>
+
+                <div class="booking-cta-body">
+
+                  <div class="booking-steps-row" aria-label="Booking steps">
+                    <div class="booking-step">
+                      <div class="booking-step-num" aria-hidden="true">1</div>
+                      <div class="booking-step-text"><strong>Click the button</strong><span>Opens your live scheduling page</span></div>
+                    </div>
+                    <div class="booking-step-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+                    <div class="booking-step">
+                      <div class="booking-step-num" aria-hidden="true">2</div>
+                      <div class="booking-step-text"><strong>Pick your slot</strong><span>Choose a date &amp; time that works</span></div>
+                    </div>
+                    <div class="booking-step-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+                    <div class="booking-step">
+                      <div class="booking-step-num" aria-hidden="true">3</div>
+                      <div class="booking-step-text"><strong>Get your Meet link</strong><span>Sent to your inbox instantly</span></div>
+                    </div>
+                  </div>
+
+                  <div class="booking-cta-center">
+                    <div class="booking-cta-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+                    <h3>Ready to get started?</h3>
+                    <p>Click below to view our live availability and lock in your free consultation. Takes less than 2 minutes.</p>
+                    <a href="https://calendar.app.google/depHYjZ9a5kjRgzZ7" target="_blank" rel="noopener" class="btn-book-now" aria-label="Book a free 30-minute technology consultation with Guided Tech Solutions">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                      Book an Appointment
+                    </a>
+                    <p class="booking-cta-note">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                      Secure · Free · No commitment required
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="calendar-card-footer">
+                  <div class="cal-footer-note">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Secure booking · Your data is never shared
+                  </div>
+                  <a href="https://calendar.app.google/depHYjZ9a5kjRgzZ7" target="_blank" rel="noopener" class="cal-open-link" aria-label="Open booking page in Google Calendar">
+                    Open in Google Calendar
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+
+              </div>
+
+              <div class="how-strip" aria-label="How the booking process works">
+                <div class="how-step">
+                  <div class="how-step-num" aria-hidden="true">1</div>
+                  <div><strong>Pick a Time Slot</strong><span>Browse available dates and choose what works for you.</span></div>
+                </div>
+                <div class="how-step">
+                  <div class="how-step-num" aria-hidden="true">2</div>
+                  <div><strong>Confirm Your Details</strong><span>Enter your name, email, and a brief note about your goals.</span></div>
+                </div>
+                <div class="how-step">
+                  <div class="how-step-num" aria-hidden="true">3</div>
+                  <div><strong>Get Your Meet Link</strong><span>A Google Meet link lands in your inbox instantly — ready to join.</span></div>
                 </div>
               </div>
-              <div class="how-step">
-                <div class="how-step-num">2</div>
-                <div>
-                  <strong>Confirm Your Details</strong>
-                  <span>Enter your name, email, and a brief note about your goals.</span>
-                </div>
-              </div>
-              <div class="how-step">
-                <div class="how-step-num">3</div>
-                <div>
-                  <strong>Get Your Meet Link</strong>
-                  <span>A Google Meet link lands in your inbox instantly — ready to join.</span>
-                </div>
-              </div>
+
             </div>
-
-          </div><!-- /right col -->
-        </div><!-- /booking-grid -->
-      </div>
-    </section>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="gts-footer">
@@ -344,25 +367,14 @@
 
         <div class="gts-footer-col about-col">
           <h2 class="footer-logo">Guided Tech Solutions</h2>
-          <p class="footer-desc">
-            Empowering organizations with intelligent,
-            scalable technology, and modern digital transformation solutions.
-          </p>
+          <p class="footer-desc">Empowering organizations with intelligent, scalable technology, and modern digital transformation solutions.</p>
           <h4 class="footer-heading">CONTACT US</h4>
           <p>info@guidedtechms.com</p>
           <div class="footer-social">
-            <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-            </a>
-            <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener">
-              <img src="asset/skool-logo.png" alt="Skool">
-            </a>
+            <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener" aria-label="Skool"><img src="asset/skool-logo.png" alt="Skool"></a>
           </div>
         </div>
 
@@ -398,9 +410,10 @@
       </div>
     </footer>
 
-  </div><!-- /page-wrapper -->
+  </div>
 
   <script src="scripts/book.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
