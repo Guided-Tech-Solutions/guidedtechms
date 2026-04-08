@@ -1,26 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Guided Tech Solutions — Blog & Insights</title>
+<!-- 1. CHARACTER SET & VIEWPORT -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="Explore the latest insights, articles, and expert perspectives from Guided Tech Solutions." />
-  <meta name="keywords" content="Guided Tech Blog, AI insights, tech automation articles, business technology trends" />
-  <meta name="author" content="Guided Tech Solutions" />
+<!-- 2. CANONICAL URL -->
+<link rel="canonical" href="https://www.guidedtechms.com/blog.html" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="asset/logo-icon.png" />
+<!-- 3. PRIMARY META TAGS -->
+<title>Blog | IT, Automation & AI Insights | Guided Tech Solutions</title>
+<meta name="description" content="Read the latest articles from Guided Tech Solutions on IT support, business automation, AI consulting, cloud migration, and RPA. Expert insights to help your business grow through smarter technology." />
+<meta name="keywords" content="IT support blog, business automation articles, AI consulting insights, cloud migration tips, RPA guide, technology blog, business technology trends, managed IT blog, digital transformation articles" />
+<meta name="author" content="Guided Tech Solutions" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<!-- 4. OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.guidedtechms.com/blog.html" />
+<meta property="og:title" content="Blog | IT, Automation & AI Insights | Guided Tech Solutions" />
+<meta property="og:description" content="Expert articles on IT support, business automation, AI consulting, and cloud migration from Guided Tech Solutions." />
+<meta property="og:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Guided Tech Solutions" />
+<meta property="og:locale" content="en_US" />
 
-  <!-- Main Global CSS -->
-  <link rel="stylesheet" href="style.css" />
+<!-- 5. TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.guidedtechms.com/blog.html" />
+<meta name="twitter:title" content="Blog | IT, Automation & AI Insights | Guided Tech Solutions" />
+<meta name="twitter:description" content="Expert articles on IT support, business automation, AI consulting, and cloud migration." />
+<meta name="twitter:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
 
-  <!-- Blog Page CSS (layout, grid, filters, pagination) -->
-  <link rel="stylesheet" href="styles/blog.css" />
+<!-- 6. FAVICON -->
+<link rel="icon" type="image/png" href="/asset/logo-icon.png" />
+<link rel="apple-touch-icon" href="/asset/logo-icon.png" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="styles/blog.css" />
+
+<!-- 7. JSON-LD — Blog / CollectionPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Blog — IT, Automation & AI Insights",
+  "url": "https://www.guidedtechms.com/blog.html",
+  "description": "Expert articles on IT support, business automation, AI consulting, cloud migration, and RPA from Guided Tech Solutions.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guided Tech Solutions",
+    "url": "https://www.guidedtechms.com/",
+    "logo": "https://www.guidedtechms.com/asset/logo-icon.png"
+  }
+}
+</script>
+
+<!-- 8. JSON-LD — BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.guidedtechms.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://www.guidedtechms.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Blog",
+      "item": "https://www.guidedtechms.com/blog.html"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -37,9 +105,8 @@
     </a>
 
     <!-- NAV MENU -->
-    <nav class="navbar-menu" id="navbarMenu">
+    <nav class="navbar-menu" id="navbarMenu" aria-label="Main navigation">
 
-      <!-- ✅ ADDED: MOBILE CLOSE BUTTON -->
       <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="Close menu">✕</button>
       
       <a href="index.html" class="nav-link">Home</a>
@@ -103,7 +170,7 @@
 
       <!-- RESOURCES -->
       <div class="nav-item">
-        <a href="#" class="nav-link nav-parent active">Resources</a>
+        <a href="#" class="nav-link nav-parent active" aria-current="page">Resources</a>
 
         <div class="mega-dropdown">
           <div class="mega-col">
@@ -156,37 +223,47 @@
 <div class="nav-overlay" id="navOverlay"></div>
 
 
-    
-    <!-- PAGE CONTENT -->
-    <main class="container content">
-      <div class="blogs-top">
-        <div class="blogs-heading">
-          <h1>Articles</h1>
+<!-- PAGE CONTENT -->
+<main class="container content">
 
-          <!-- SEARCH + FILTERS -->
-          <div class="controls">
-            <input id="searchInput" placeholder="Search titles..." aria-label="Search blog posts">
+  <!-- HERO TEXT + SEARCH -->
+  <div class="blogs-top">
+    <div class="blogs-heading">
 
-            <select id="categoryFilter">
-              <option value="">All categories</option>
-              <!-- dynamically added -->
-            </select>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> › <a href="blog.html">Resources</a> › <span class="page">Blog</span>
+      </nav>
 
-            <button id="clearFilters" class="btn-small">Clear</button>
-          </div>
-        </div>
+      <h1>Articles & Insights</h1>
+      <p class="blog-intro">Expert perspectives on IT support, business automation, AI consulting, cloud migration, and growing your business through smarter technology.</p>
+
+      <!-- SEARCH + FILTERS -->
+      <div class="controls">
+        <input id="searchInput" placeholder="Search articles..." aria-label="Search blog posts" />
+
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="">All categories</option>
+          <!-- dynamically populated -->
+        </select>
+
+        <button id="clearFilters" class="btn-small">Clear</button>
       </div>
 
-      <!-- BLOG GRID -->
-      <div id="postsGrid" class="blogs-grid" aria-live="polite"></div>
+    </div>
+  </div>
 
-      <!-- PAGINATION -->
-      <div class="pagination">
-        <button id="prevPage" class="btn-small" disabled>&larr; Prev</button>
-        <div id="pageInfo" class="page-info">Page 1</div>
-        <button id="nextPage" class="btn-small" disabled>Next &rarr;</button>
-      </div>
-    </main>
+  <!-- BLOG GRID — populated by blog.js from Firebase -->
+  <div id="postsGrid" class="blogs-grid" aria-live="polite" aria-label="Blog posts"></div>
+
+  <!-- PAGINATION -->
+  <nav class="pagination" aria-label="Blog pagination">
+    <button id="prevPage" class="btn-small" disabled>&larr; Prev</button>
+    <div id="pageInfo" class="page-info">Page 1</div>
+    <button id="nextPage" class="btn-small" disabled>Next &rarr;</button>
+  </nav>
+
+</main>
+
 
 <!-- FOOTER -->
 <footer class="gts-footer">
@@ -207,25 +284,23 @@
 
       <!-- Social Icons -->
       <div class="footer-social">
-        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener">
+        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener" aria-label="Facebook">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
         </a>
-      
-        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
         </a>
-      
-        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener">
+
+        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
         </a>
-      
-        <!-- FIXED: Working Skool icon -->
-        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener">
+
+        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener" aria-label="Skool">
           <img src="asset/skool-logo.png" alt="Skool">
         </a>
       </div>
     </div>
-
 
     <!-- SERVICES -->
     <div class="gts-footer-col">
@@ -240,7 +315,6 @@
       <a href="services.html#consulting">Consulting</a>
       <a href="services.html">All Services</a>
     </div>
-    
 
     <!-- RESOURCES -->
     <div class="gts-footer-col">
@@ -255,10 +329,8 @@
       <h4 class="footer-heading">ABOUT</h4>
       <a href="about.html">Company</a>
       <a href="contact.html">Contact</a>
-     </div>
+    </div>
   </div>
-
-
 
   <div class="gts-footer-bottom">
     © <span id="year"></span> Guided Tech Solutions — All rights reserved.
@@ -267,10 +339,10 @@
 </footer>
 
 
-  <!-- FIREBASE + PAGE LOGIC -->
-  <script type="module" src="admin/firebase.js"></script>
-  <script type="module" src="scripts/blog.js"></script>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<!-- FIREBASE + PAGE LOGIC -->
+<script type="module" src="admin/firebase.js"></script>
+<script type="module" src="scripts/blog.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
