@@ -1,20 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Guided Tech Solutions empowers businesses with smart, scalable, and secure technology solutions." />
-  <meta name="keywords" content="Guided Tech Solutions, technology consulting, IT infrastructure, cloud computing, cybersecurity, business automation, software development, AI, tech strategy" />
-  <meta name="author" content="Guided Tech Solutions" />
 
-  <title>Guided Tech Solutions — Smarter, Scalable Technology</title>
+<!-- 1. CHARACTER SET & VIEWPORT -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-   <!-- Favicon Placeholder -->
-  <link rel="shortcut icon" href="asset/logo-icon.png" />
+<!-- 2. CANONICAL URL -->
+<link rel="canonical" href="https://www.guidedtechms.com/about.html" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="styles/about.css" />
+<!-- 3. PRIMARY META TAGS -->
+<title>About Guided Tech Solutions | Our Mission, Vision & History</title>
+<meta name="description" content="Learn about Guided Tech Solutions — our mission to empower businesses, municipalities, and schools with secure, scalable technology. Discover our history, vision, and why 50+ organizations trust us." />
+<meta name="keywords" content="about Guided Tech Solutions, IT company Mississippi, technology consulting firm, managed IT services, business automation company, AI consulting, cloud migration company, who we are" />
+<meta name="author" content="Guided Tech Solutions" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<!-- 4. OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.guidedtechms.com/about.html" />
+<meta property="og:title" content="About Guided Tech Solutions | Our Mission, Vision & History" />
+<meta property="og:description" content="Discover who we are, what drives us, and why 50+ businesses and organizations trust Guided Tech Solutions to manage their technology." />
+<meta property="og:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Guided Tech Solutions" />
+<meta property="og:locale" content="en_US" />
+
+<!-- 5. TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.guidedtechms.com/about.html" />
+<meta name="twitter:title" content="About Guided Tech Solutions | Our Mission, Vision & History" />
+<meta name="twitter:description" content="Discover who we are, what drives us, and why 50+ businesses trust Guided Tech Solutions." />
+<meta name="twitter:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+
+<!-- 6. FAVICON -->
+<link rel="icon" type="image/png" href="/asset/logo-icon.png" />
+<link rel="apple-touch-icon" href="/asset/logo-icon.png" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="styles/about.css" />
+
+<!-- 7. JSON-LD — Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Guided Tech Solutions",
+  "alternateName": "GuidedTechMS",
+  "url": "https://www.guidedtechms.com/",
+  "logo": "https://www.guidedtechms.com/asset/logo-icon.png",
+  "description": "Guided Tech Solutions designs and implements tailored technology systems, including IT support, automation solutions, cloud migration, AI consulting, and RPA services for businesses, municipalities, and schools.",
+  "email": "info@guidedtechms.com",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "sameAs": [
+    "https://web.facebook.com/profile.php?id=61579123374511",
+    "https://www.instagram.com",
+    "https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/"
+  ]
+}
+</script>
+
+<!-- 8. JSON-LD — AboutPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Guided Tech Solutions",
+  "url": "https://www.guidedtechms.com/about.html",
+  "description": "Learn about Guided Tech Solutions — our mission, vision, history, and the clients we serve including businesses, municipalities, and school districts.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.guidedtechms.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://www.guidedtechms.com/about.html"
+      }
+    ]
+  }
+}
+</script>
 </head>
 
 <body>
@@ -31,16 +110,15 @@
     </a>
 
     <!-- NAV MENU -->
-    <nav class="navbar-menu" id="navbarMenu">
+    <nav class="navbar-menu" id="navbarMenu" aria-label="Main navigation">
 
-      <!-- ✅ ADDED: MOBILE CLOSE BUTTON -->
       <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="Close menu">✕</button>
       
       <a href="index.html" class="nav-link">Home</a>
 
       <!-- ABOUT -->
       <div class="nav-item">
-        <a href="#" class="nav-link nav-parent active">About</a>
+        <a href="#" class="nav-link nav-parent active" aria-current="page">About</a>
 
         <div class="mega-dropdown">
           <div class="mega-col">
@@ -150,7 +228,6 @@
 <div class="nav-overlay" id="navOverlay"></div>
 
 
-
     <!-- HERO -->
     <section class="hero">
       <div class="hero-content container">
@@ -163,275 +240,274 @@
           Discover our vision, mission, and the innovative solutions driving your success.
         </p>
 
-        <div class="breadcrumbs">
+        <!-- SEO-friendly breadcrumb -->
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
           <a href="index.html">Home</a> › <span class="page">About</span>
-        </div>
+        </nav>
 
       </div>
     </section>
     
 
     <!-- MISSION -->
-    <section id="about-mission" class="mission">
-  <div class="container mission-grid">
+    <section id="mission" class="mission">
+      <div class="container mission-grid">
 
-    <div class="mission-left">
-      <h5 class="section-label">WHAT WE ARE</h5>
-      <h2 class="mission-title">
-        We help global brands deliver great <span class="highlight">results</span>
-      </h2>
-    </div>
+        <div class="mission-left">
+          <h5 class="section-label">WHAT WE ARE</h5>
+          <h2 class="mission-title">
+            We help global brands deliver great <span class="highlight">results</span>
+          </h2>
+        </div>
 
-    <div class="mission-right">
+        <div class="mission-right">
 
-      <!-- TAB BUTTONS -->
-      <div class="mission-tabs">
-        <button class="tab-btn active" data-tab="mission">Mission</button>
-        <button class="tab-btn" data-tab="vision">Vision</button>
-        <button class="tab-btn" data-tab="values">Our Story</button>
-      </div>
-
-      <!-- TAB CONTENT -->
-      <div class="tab-content active" id="mission">
-        <p>
-          We simplify complex technology challenges, improve operational efficiency,
-          and help organizations grow through innovative, dependable solutions.
-          Our reliable systems empower clients to confidently navigate an evolving
-          technology landscape.
-        </p>
-        <p>
-          Our mission is to modernize Mississippi’s critical infrastructure one city,
-          one school, and one business at a time. We deliver secure, compliant, and
-          resilient technology with zero downtime and zero overwhelm, ensuring
-          readiness for CJIS, NIST, and CMMC standards.
-        </p>
-      </div>
-
-      <div class="tab-content" id="vision">
-        <p>
-          Our vision is to empower organizations through secure, scalable digital
-          transformation that drives innovation, resilience, and long-term
-          sustainability.
-        </p>
-        <p>
-          Starting in Mississippi and extending beyond, we envision a future where
-          cities, schools, and businesses operate on modern, compliant, and dependable
-          technology without disruption, complexity, or compromise.
-        </p>
-      </div>
-
-      <div class="tab-content" id="values">
-        <p>
-          Guided Tech Solutions was built out of necessity, not trends.
-          Across Mississippi, we kept encountering the same problem.
-        </p>
-        <p>
-          Cities, schools, and businesses were running critical operations on aging
-          servers, manual processes, and fragile networks. Systems were slow.
-        </p>
-        <p>
-          We saw the gap, and we filled it.
-          As cybersecurity threats grew, so did the risk. Major technology providers
-          weren’t stepping in. So we did.
-        </p>
-        <p>
-          Guided Tech Solutions was founded to help organizations modernize without
-          disruption by moving them to the cloud, strengthening infrastructure,
-          automating what slows them down, and providing reliable,
-          human centered technical support.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-    
-<!-- WHY CHOOSE US -->
-<section class="why-choose-us">
-  <div class="container choose-grid">
-
-    <div class="choose-left">
-      <h4 class="section-label">WHY CHOOSE US</h4>
-
-      <h2 class="choose-title">
-        Powerful solutions for your business <span class="highlight">growth</span>
-      </h2>
-
-      <p class="choose-desc">
-        We handle the systems behind your business so you can focus on customers, sales, and profit.
-      </p>
-
-      <div class="feature-list">
-
-        <button
-          class="feature-item active"
-          data-title="We Keep Your Business Running Smoothly"
-          data-text="We upgrade and modernize your technology without interrupting your daily operations. Our solutions are reliable, secure, and built to work smoothly from day one. When your systems are slow, outdated, or always breaking, your business loses time, customers, and money. We make sure your technology works the way it should, fast, stable, and secure. We fix what’s not working, modernize what’s outdated, and keep everything running without disrupting your daily operations. Result: less downtime, fewer mistakes, and a smoother business that’s ready to grow."
-        >
-          <span>We Keep Your Business Running Smoothly</span>
-          <span class="arrow">›</span>
-        </button>
-
-        <button
-          class="feature-item"
-          data-title="We Help You Work Faster"
-          data-text="Many businesses waste hours every week doing the same tasks manually tracking customers, sending follow-ups, updating records, and moving data between tools. We automate those tasks and simplify your workflow so work gets done faster with fewer errors. Your team stays focused on customers and sales, and your business can handle more clients without hiring more people."
-        >
-          <span>We Help You Work Faster</span>
-          <span class="arrow">›</span>
-        </button>
-
-        <button
-          class="feature-item"
-          data-title="We Don’t Just Set It Up, We Support You Long-Term"
-          data-text="Some tech companies set things up and disappear. We don’t. Guided Tech Solutions stays with you to keep your systems running, secure, and improving. When you need help, updates, or changes, we’re available. As your business grows and your customer base increases, we help your systems scale smoothly, so tech never becomes the reason you slow down."
-        >
-          <span>We’re With You Every Step of the Way</span>
-          <span class="arrow">›</span>
-        </button>
-
-      </div>
-    </div>
-
-    <div class="choose-right">
-      <div class="choose-card" id="chooseCard">
-        <h3 id="chooseTitle">We Keep Your Business Running Smoothly</h3>
-        <p id="chooseText">
-          We upgrade and modernize your technology without interrupting your daily operations. Our solutions are reliable, secure, and built to work smoothly from day one. 
-          When your systems are slow, outdated, or always breaking, your business loses time, customers, and money. We make sure your technology works the way it should, fast, stable, and secure. 
-          We fix what’s not working, modernize what’s outdated, and keep everything running without disrupting your daily operations. Result: less downtime, fewer mistakes, and a smoother business that’s ready to grow.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-<section class="who-we-serve">
-  <div class="container mission-grid">
-
-    <!-- LEFT SIDE -->
-    <div class="mission-left">
-      <h5 class="section-label">WHO WE SERVE</h5>
-      <h2 class="mission-title">
-        We specialize in helping <span class="highlight">organizations thrive</span>
-      </h2>
-    </div>
-
-    <!-- RIGHT SIDE -->
-    <div class="mission-right">
-
-      <!-- TABS -->
-      <div class="mission-tabs">
-        <button class="tab-btn active" data-tab="leaders">Municipal Leaders</button>
-        <button class="tab-btn" data-tab="schools">School Districts</button>
-        <button class="tab-btn" data-tab="business">Businesses</button>
-      </div>
-
-      <!-- TAB CONTENT — Municipal Leaders -->
-      <div class="tab-content active" id="leaders">
-        <p>
-          Municipal leaders face increasing pressure to modernize operations while
-          maintaining compliance, reducing risk, and protecting their communities.
-        </p>
-        <p>
-          We help cities transition to reliable digital systems without disruptions,
-          ensuring smooth operations, enhanced security, and long-term sustainability.
-        </p>
-      </div>
-      
-
-      <!-- TAB CONTENT — School Districts -->
-      <div class="tab-content" id="schools">
-        <p>
-          School districts need dependable technology that supports learning
-          without introducing new vulnerabilities or downtime.
-        </p>
-        <p>
-          Our solutions minimize classroom disruption, strengthen cybersecurity,
-          and ensure students and staff have the tools they need to succeed.
-        </p>
-      </div>
-
-      <!-- TAB CONTENT — Small Business Owners -->
-      <div class="tab-content" id="business">
-        <p>
-          Businesses must stay compliant, efficient, and secure while competing
-          in fast-changing markets with limited technical resources.
-        </p>
-        <p>
-          We provide streamlined, cost-effective solutions that help business owners
-          stay compliant, win contracts, and focus on growth.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section id="history" class="history-section">
-  <div class="history-container">
-
-    <h2 class="history-title">Our History</h2>
-    <p class="history-subtitle">
-      Empowering organizations with innovative technology solutions that support connection,
-      growth, and long-lasting impact.
-    </p>
-
-    <div class="history-grid">
-
-      <!-- LEFT TEXT -->
-      <div class="history-left">
-        <p>
-          Guided Tech Solutions began with a mission to transform the way organizations adapt
-          to modern technology. Our focus has always been on empowering communities, teams, and
-          leaders with tools that promote efficiency, security, and sustainable growth.
-        </p>
-
-        <p>
-          Over the years, our experience and passion have allowed us to deliver impactful
-          solutions for municipalities, schools, and small businesses. We continue to evolve,
-          innovate, and guide our partners toward a stronger digital future.
-        </p>
-
-        <!-- STATS BAR -->
-        <div class="history-stats">
-          <div class="stat-item">
-            <div class="stat-label">Campaign completed</div>
-            <div class="stat-value">350+</div>
+          <!-- TAB BUTTONS -->
+          <div class="mission-tabs" role="tablist" aria-label="Mission, Vision, and Story">
+            <button class="tab-btn active" data-tab="mission" role="tab" aria-selected="true" aria-controls="mission-tab">Mission</button>
+            <button class="tab-btn" data-tab="vision" role="tab" aria-selected="false" aria-controls="vision-tab">Vision</button>
+            <button class="tab-btn" data-tab="values" role="tab" aria-selected="false" aria-controls="values-tab">Our Story</button>
           </div>
 
-          <div class="stat-item">
-            <div class="stat-label">Happy customers</div>
-            <div class="stat-value">120+</div>
+          <!-- TAB CONTENT -->
+          <div class="tab-content active" id="mission-tab" role="tabpanel">
+            <p>
+              We simplify complex technology challenges, improve operational efficiency,
+              and help organizations grow through innovative, dependable solutions.
+              Our reliable systems empower clients to confidently navigate an evolving
+              technology landscape.
+            </p>
+            <p>
+              Our mission is to modernize Mississippi's critical infrastructure one city,
+              one school, and one business at a time. We deliver secure, compliant, and
+              resilient technology with zero downtime and zero overwhelm, ensuring
+              readiness for CJIS, NIST, and CMMC standards.
+            </p>
           </div>
 
-          <div class="stat-item">
-            <div class="stat-label">Years of experience</div>
-            <div class="stat-value">06+</div>
+          <div class="tab-content" id="vision-tab" role="tabpanel">
+            <p>
+              Our vision is to empower organizations through secure, scalable digital
+              transformation that drives innovation, resilience, and long-term
+              sustainability.
+            </p>
+            <p>
+              Starting in Mississippi and extending beyond, we envision a future where
+              cities, schools, and businesses operate on modern, compliant, and dependable
+              technology without disruption, complexity, or compromise.
+            </p>
+          </div>
+
+          <div class="tab-content" id="values-tab" role="tabpanel">
+            <p>
+              Guided Tech Solutions was built out of necessity, not trends.
+              Across Mississippi, we kept encountering the same problem.
+            </p>
+            <p>
+              Cities, schools, and businesses were running critical operations on aging
+              servers, manual processes, and fragile networks. Systems were slow.
+            </p>
+            <p>
+              We saw the gap, and we filled it.
+              As cybersecurity threats grew, so did the risk. Major technology providers
+              weren't stepping in. So we did.
+            </p>
+            <p>
+              Guided Tech Solutions was founded to help organizations modernize without
+              disruption — moving them to the cloud, strengthening infrastructure,
+              automating what slows them down, and providing reliable,
+              human-centered technical support.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose-us">
+      <div class="container choose-grid">
+
+        <div class="choose-left">
+          <h4 class="section-label">WHY CHOOSE US</h4>
+
+          <h2 class="choose-title">
+            Powerful solutions for your business <span class="highlight">growth</span>
+          </h2>
+
+          <p class="choose-desc">
+            We handle the systems behind your business so you can focus on customers, sales, and profit.
+          </p>
+
+          <div class="feature-list">
+
+            <button
+              class="feature-item active"
+              data-title="We Keep Your Business Running Smoothly"
+              data-text="We upgrade and modernize your technology without interrupting your daily operations. Our solutions are reliable, secure, and built to work smoothly from day one. When your systems are slow, outdated, or always breaking, your business loses time, customers, and money. We make sure your technology works the way it should, fast, stable, and secure. We fix what's not working, modernize what's outdated, and keep everything running without disrupting your daily operations. Result: less downtime, fewer mistakes, and a smoother business that's ready to grow."
+            >
+              <span>We Keep Your Business Running Smoothly</span>
+              <span class="arrow">›</span>
+            </button>
+
+            <button
+              class="feature-item"
+              data-title="We Help You Work Faster"
+              data-text="Many businesses waste hours every week doing the same tasks manually — tracking customers, sending follow-ups, updating records, and moving data between tools. We automate those tasks and simplify your workflow so work gets done faster with fewer errors. Your team stays focused on customers and sales, and your business can handle more clients without hiring more people."
+            >
+              <span>We Help You Work Faster</span>
+              <span class="arrow">›</span>
+            </button>
+
+            <button
+              class="feature-item"
+              data-title="We Don't Just Set It Up, We Support You Long-Term"
+              data-text="Some tech companies set things up and disappear. We don't. Guided Tech Solutions stays with you to keep your systems running, secure, and improving. When you need help, updates, or changes, we're available. As your business grows and your customer base increases, we help your systems scale smoothly, so tech never becomes the reason you slow down."
+            >
+              <span>We're With You Every Step of the Way</span>
+              <span class="arrow">›</span>
+            </button>
+
           </div>
         </div>
-      </div>
 
-      <!-- RIGHT IMAGE -->
-      <div class="history-right">
-        <img src="asset/history.png"
-             alt="History Illustration"
-             class="history-image">
-      </div>
+        <div class="choose-right">
+          <div class="choose-card" id="chooseCard">
+            <h3 id="chooseTitle">We Keep Your Business Running Smoothly</h3>
+            <p id="chooseText">
+              We upgrade and modernize your technology without interrupting your daily operations. Our solutions are reliable, secure, and built to work smoothly from day one. 
+              When your systems are slow, outdated, or always breaking, your business loses time, customers, and money. We make sure your technology works the way it should, fast, stable, and secure. 
+              We fix what's not working, modernize what's outdated, and keep everything running without disrupting your daily operations. Result: less downtime, fewer mistakes, and a smoother business that's ready to grow.
+            </p>
+          </div>
+        </div>
 
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
+
+
+    <!-- WHO WE SERVE -->
+    <section class="who-we-serve">
+      <div class="container mission-grid">
+
+        <!-- LEFT SIDE -->
+        <div class="mission-left">
+          <h5 class="section-label">WHO WE SERVE</h5>
+          <h2 class="mission-title">
+            We specialize in helping <span class="highlight">organizations thrive</span>
+          </h2>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="mission-right">
+
+          <!-- TABS -->
+          <div class="mission-tabs" role="tablist" aria-label="Clients we serve">
+            <button class="tab-btn active" data-tab="leaders" role="tab" aria-selected="true" aria-controls="leaders-tab">Municipal Leaders</button>
+            <button class="tab-btn" data-tab="schools" role="tab" aria-selected="false" aria-controls="schools-tab">School Districts</button>
+            <button class="tab-btn" data-tab="business" role="tab" aria-selected="false" aria-controls="business-tab">Businesses</button>
+          </div>
+
+          <!-- TAB CONTENT — Municipal Leaders -->
+          <div class="tab-content active" id="leaders-tab" role="tabpanel">
+            <p>
+              Municipal leaders face increasing pressure to modernize operations while
+              maintaining compliance, reducing risk, and protecting their communities.
+            </p>
+            <p>
+              We help cities transition to reliable digital systems without disruptions,
+              ensuring smooth operations, enhanced security, and long-term sustainability.
+            </p>
+          </div>
+
+          <!-- TAB CONTENT — School Districts -->
+          <div class="tab-content" id="schools-tab" role="tabpanel">
+            <p>
+              School districts need dependable technology that supports learning
+              without introducing new vulnerabilities or downtime.
+            </p>
+            <p>
+              Our solutions minimize classroom disruption, strengthen cybersecurity,
+              and ensure students and staff have the tools they need to succeed.
+            </p>
+          </div>
+
+          <!-- TAB CONTENT — Businesses -->
+          <div class="tab-content" id="business-tab" role="tabpanel">
+            <p>
+              Businesses must stay compliant, efficient, and secure while competing
+              in fast-changing markets with limited technical resources.
+            </p>
+            <p>
+              We provide streamlined, cost-effective solutions that help business owners
+              stay compliant, win contracts, and focus on growth.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HISTORY -->
+    <section id="history" class="history-section">
+      <div class="history-container">
+
+        <h2 class="history-title">Our History</h2>
+        <p class="history-subtitle">
+          Empowering organizations with innovative technology solutions that support connection,
+          growth, and long-lasting impact.
+        </p>
+
+        <div class="history-grid">
+
+          <!-- LEFT TEXT -->
+          <div class="history-left">
+            <p>
+              Guided Tech Solutions began with a mission to transform the way organizations adapt
+              to modern technology. Our focus has always been on empowering communities, teams, and
+              leaders with tools that promote efficiency, security, and sustainable growth.
+            </p>
+
+            <p>
+              Over the years, our experience and passion have allowed us to deliver impactful
+              solutions for municipalities, schools, and small businesses. We continue to evolve,
+              innovate, and guide our partners toward a stronger digital future.
+            </p>
+
+            <!-- STATS BAR -->
+            <div class="history-stats">
+              <div class="stat-item">
+                <div class="stat-label">Campaign completed</div>
+                <div class="stat-value">350+</div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-label">Happy customers</div>
+                <div class="stat-value">120+</div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-label">Years of experience</div>
+                <div class="stat-value">06+</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="history-right">
+            <img src="asset/history.png"
+                 alt="Guided Tech Solutions history and growth timeline"
+                 class="history-image">
+          </div>
+
+        </div>
+      </div>
+    </section>
     
-</div>
+  </div>
 
 <!-- FOOTER -->
 <footer class="gts-footer">
@@ -452,20 +528,19 @@
 
       <!-- Social Icons -->
       <div class="footer-social">
-        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener">
+        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener" aria-label="Facebook">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
         </a>
       
-        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
         </a>
       
-        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
         </a>
       
-        <!-- FIXED: Working Skool icon -->
-        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener">
+        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener" aria-label="Skool">
           <img src="asset/skool-logo.png" alt="Skool">
         </a>
       </div>
@@ -485,7 +560,6 @@
       <a href="services.html#consulting">Consulting</a>
       <a href="services.html">All Services</a>
     </div>
-    
 
     <!-- RESOURCES -->
     <div class="gts-footer-col">
@@ -500,17 +574,14 @@
       <h4 class="footer-heading">ABOUT</h4>
       <a href="about.html">Company</a>
       <a href="contact.html">Contact</a>
-     </div>
+    </div>
   </div>
-
 
   <div class="gts-footer-bottom">
     © <span id="year"></span> Guided Tech Solutions — All rights reserved.
   </div>
 </footer>
 
- 
-  
 <script src="scripts/about.js"></script>  
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
