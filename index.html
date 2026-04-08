@@ -38,14 +38,12 @@
 <link rel="icon" type="image/png" href="/asset/logo-icon.png" />
 <link rel="apple-touch-icon" href="/asset/logo-icon.png" />
 
-
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="mobile-responsive.css" /> 
-  
 
 <!-- 7. JSON-LD STRUCTURED DATA — Organization -->
 <script type="application/ld+json">
@@ -145,7 +143,7 @@
     <!-- NAV MENU -->
     <nav class="navbar-menu" id="navbarMenu">
 
-      <!-- ✅ ADDED: MOBILE CLOSE BUTTON -->
+      <!-- MOBILE CLOSE BUTTON -->
       <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="Close menu">✕</button>
       
       <a href="index.html" class="nav-link active">Home</a>
@@ -284,9 +282,9 @@
 
       <div class="hero-people">
         <div class="avatars">
-          <img src="asset/avatar1.jpg" class="avatar">
-          <img src="asset/avatar2.jpg" class="avatar">
-          <img src="asset/avatar3.jpg" class="avatar">
+          <img src="asset/avatar1.jpg" class="avatar" alt="Client">
+          <img src="asset/avatar2.jpg" class="avatar" alt="Client">
+          <img src="asset/avatar3.jpg" class="avatar" alt="Client">
           <div class="avatar-count">1k+</div>
         </div>
         <p class="hero-people-text">1000+ people already joined Guided Tech Solutions</p>
@@ -296,8 +294,8 @@
     <!-- RIGHT SIDE (IMAGE REMAINS STATIC) -->
     <div class="hero-right">
       <div class="hero-image-frame">
-        <img src="asset/manhero.jpg" class="hero-main-img">
-        <img src="asset/womanhero.jpg" class="hero-sub-img">
+        <img src="asset/manhero.jpg" class="hero-main-img" alt="Technology professional at Guided Tech Solutions">
+        <img src="asset/womanhero.jpg" class="hero-sub-img" alt="Business professional using Guided Tech Solutions">
       </div>
     </div>
 
@@ -310,8 +308,6 @@
       <div class="container">
         <div class="impact-grid">
           <div class="impact-label">
-            <!-- <svg width="12" height="12"><circle cx="6" cy="6" r="6" fill="#131313"></circle></svg>
-            <span>About Guided Tech Solutions</span> -->
           </div>
 
           <div class="impact-content">
@@ -385,10 +381,6 @@
     <!-- Centered headline area -->
     <div class="dashboard-head">
       <div class="label-wrapper centered">
-        <!-- <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
-          <circle cx="5" cy="5" r="5" fill="#000"></circle>
-        </svg>
-        <span class="label-text">Expertise</span> -->
       </div>
 
       <h2 class="dashboard-title">
@@ -448,56 +440,6 @@
 </section>
 
 
-
-<!-- FEATURES SECTION -->
-<!-- <section class="section-features">
-  <div class="container"> -->
-    <!-- Header -->
-    <!-- <div class="features-top">
-      <div class="features-label">
-        <svg width="12" height="12"><circle cx="6" cy="6" r="6" fill="#000"></circle></svg>
-        <span>Features</span>
-      </div>
-      <h2 class="features-title">
-        Explore our standout features designed to deliver exceptional performance
-        and value, distinguishing us from the competition.
-      </h2>
-    </div> -->
-
-    <!-- Main Grid -->
-    <!-- <div class="features-main"> -->
-      <!-- Left Column -->
-      <!-- <div class="features-list">
-        <button class="feature-item active" data-feature="analytics">Real-time analytics</button>
-        <button class="feature-item" data-feature="reports">Customizable reports</button>
-        <button class="feature-item" data-feature="mobile">Mobile accessibility</button>
-        <button class="feature-item" data-feature="security">Enhanced security</button>
-      </div> -->
-
-      <!-- Right Column -->
-      <!-- <div class="feature-card">
-        <div class="feature-content active" id="analytics">
-          <h3>Real-time analytics</h3>
-          <p>Gain insights instantly with live data tracking and performance dashboards that help you make smarter decisions.</p>
-        </div>
-        <div class="feature-content" id="reports">
-          <h3>Customizable reports</h3>
-          <p>Create tailored reports to match your business needs, enabling deeper financial analysis and trend discovery.</p>
-        </div>
-        <div class="feature-content" id="mobile">
-          <h3>Mobile accessibility</h3>
-          <p>Access your data and tools seamlessly on any device, keeping you connected wherever you are.</p>
-        </div>
-        <div class="feature-content" id="security">
-          <h3>Enhanced security</h3>
-          <p>Protect your assets with industry-leading encryption, authentication, and continuous threat monitoring.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
 <!-- TESTIMONIALS SECTION -->
 <section class="section-testimonials">
   <div class="container">
@@ -517,119 +459,53 @@
 </section>
 
 
-<!-- PRICING SECTION -->
-<!-- <section class="section-pricing">
-  <div class="container">
-    <div class="pricing-top">
-      <div class="label-wrapper">
-        <svg width="12" height="12"><circle cx="6" cy="6" r="6" fill="#111"></circle></svg>
-        <span>Expertise</span>
-      </div>
-      <h2 class="pricing-title">Simple & transparent pricing</h2>
-      <p class="pricing-subtext">
-        Choose a plan that fits your business needs and budget. No hidden fees, no surprises—
-        just straightforward pricing for powerful financial management.
-      </p>
-    </div>
-
-    <div class="pricing-grid">
-      <div class="pricing-card light">
-        <h3>Starter Plan</h3>
-        <h1>$50 <span>/month</span></h1>
-        <p>Perfect for small teams, startups, and growing businesses</p>
-        <ul>
-          <li>Basic financial analytics tools</li>
-          <li>Up to 3 user accounts</li>
-          <li>Real-time exchange rate monitoring</li>
-          <li>Monthly financial reports</li>
-          <li>Email support</li>
-        </ul>
-        <a href="#" class="btn-dark">Get Started</a>
-      </div>
-
-      <div class="pricing-card dark">
-        <h3>Starter Plan</h3>
-        <h1>$50 <span>/month</span></h1>
-        <p>Perfect for small teams, startups, and growing businesses</p>
-        <ul>
-          <li>Basic financial analytics tools</li>
-          <li>Up to 3 user accounts</li>
-          <li>Real-time exchange rate monitoring</li>
-          <li>Monthly financial reports</li>
-          <li>Email support</li>
-        </ul>
-        <a href="#" class="btn-light">Get Started</a>
-      </div>
-
-      <div class="pricing-card light">
-        <h3>Starter Plan</h3>
-        <h1>$50 <span>/month</span></h1>
-        <p>Perfect for small teams, startups, and growing businesses</p>
-        <ul>
-          <li>Basic financial analytics tools</li>
-          <li>Up to 3 user accounts</li>
-          <li>Real-time exchange rate monitoring</li>
-          <li>Monthly financial reports</li>
-          <li>Email support</li>
-        </ul>
-        <a href="#" class="btn-dark">Get Started</a>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
  <!-- BLOG SECTION -->
 <section class="section-blogs">
   <div class="container">
     <div class="blogs-top">
-      <!-- <div class="blogs-label">
-        <svg width="10" height="10"><circle cx="5" cy="5" r="5" fill="black" /></svg>
-        <span>Blog and articles</span>
-      </div> -->
       <h2 class="blogs-title">Latest insights and trends</h2>
     </div>
 
     <div class="blogs-slider">
-      <!-- Default placeholders until real blog posts load -->
+      <!-- Fallback placeholder cards shown only if Firebase blog posts fail to load -->
       <article class="blog-card">
         <div class="blog-image"></div>
         <div class="blog-content">
           <div class="blog-tags">
-            <span>News</span><span>Insights</span>
+            <span>Automation</span><span>Insights</span>
           </div>
-          <h3>The Ultimate Guide to Budgeting in 2024</h3>
-          <p>Master the art of budgeting with our comprehensive guide. Learn how to create a budget that works for you.</p>
+          <h3>What Is Business Process Automation and Why Does Your Company Need It?</h3>
+          <p>Discover how automating repetitive tasks can save your team hours every week and unlock faster business growth.</p>
         </div>
       </article>
       <article class="blog-card">
         <div class="blog-image"></div>
         <div class="blog-content">
           <div class="blog-tags">
-            <span>Insights</span>
+            <span>IT Support</span>
           </div>
-          <h3>Top Investment Strategies for Long-Term Growth</h3>
-          <p>Discover the best investment strategies to build and sustain your wealth over time.</p>
+          <h3>5 Signs Your Business Needs Managed IT Support Right Now</h3>
+          <p>If your team is spending more time fighting tech problems than serving customers, it's time to get the right support in place.</p>
         </div>
       </article>
       <article class="blog-card">
         <div class="blog-image"></div>
         <div class="blog-content">
           <div class="blog-tags">
-            <span>News</span><span>Insights</span>
+            <span>Cloud</span><span>Insights</span>
           </div>
-          <h3>Understanding Cryptocurrency: What You Need to Know</h3>
-          <p>Cryptocurrency continues to make headlines, but what does it mean for your finances?</p>
+          <h3>Cloud Migration Guide: How to Move Your Business Without Downtime</h3>
+          <p>Moving to the cloud doesn't have to be stressful. Here's how we help businesses modernize their systems safely and efficiently.</p>
         </div>
       </article>
       <article class="blog-card">
         <div class="blog-image"></div>
         <div class="blog-content">
           <div class="blog-tags">
-            <span>Insights</span>
+            <span>AI</span><span>Insights</span>
           </div>
-          <h3>Top Investment Strategies for Long-Term Growth</h3>
-          <p>Discover the best investment strategies to build and sustain your wealth over time.</p>
+          <h3>How AI Consulting Helps Small Businesses Compete with Larger Competitors</h3>
+          <p>Artificial intelligence is no longer just for enterprise companies. Learn how small businesses are using AI to work smarter and win more clients.</p>
         </div>
       </article>
     </div>
@@ -662,20 +538,19 @@
 
       <!-- Social Icons -->
       <div class="footer-social">
-        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener">
+        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener" aria-label="Facebook">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
         </a>
       
-        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
         </a>
       
-        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
         </a>
       
-        <!-- FIXED: Working Skool icon -->
-        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener">
+        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener" aria-label="Skool">
           <img src="asset/skool-logo.png" alt="Skool">
         </a>
       </div>
@@ -750,9 +625,9 @@
 
     container.innerHTML = items.map((t, i) => `
       <div class="testimonial-item ${i === 0 ? "active" : ""}">
-        <p class="testimonial-quote">“${t.quote || ""}”</p>
+        <p class="testimonial-quote">"${t.quote || ""}"</p>
         <div class="testimonial-person">
-          <img src="${t.imageUrl || 'asset/avatar1.jpg'}" class="testimonial-avatar">
+          <img src="${t.imageUrl || 'asset/avatar1.jpg'}" class="testimonial-avatar" alt="${t.name || 'Client'}">
           <div>
             <h3>${t.name || "Unnamed"}</h3>
             <p>${t.role || ""}</p>
@@ -801,8 +676,6 @@ async function loadHomepageBlogs() {
   const container = document.querySelector(".blogs-slider");
   if (!container) return;
 
-  container.innerHTML = "<p>Loading...</p>";
-
   const q = query(
     collection(db, "blogs"),
     orderBy("createdAt", "desc"),
@@ -815,10 +688,8 @@ async function loadHomepageBlogs() {
     ...d.data()
   }));
 
-  if (!posts.length) {
-    container.innerHTML = "<p>No blog posts yet.</p>";
-    return;
-  }
+  // Only replace placeholder cards if Firebase actually returned posts
+  if (!posts.length) return;
 
   container.innerHTML = posts.map(post => `
     <article
