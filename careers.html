@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Guided Tech Solutions empowers businesses with smart, scalable, and secure technology solutions." />
-  <meta name="keywords" content="Guided Tech Solutions, technology consulting, IT infrastructure, cloud computing, cybersecurity, business automation, software development, AI, tech strategy" />
-  <meta name="author" content="Guided Tech Solutions" />
 
-  <title>Guided Tech Solutions — Smarter, Scalable Technology</title>
+<!-- 1. CHARACTER SET & VIEWPORT -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-   <!-- Favicon Placeholder -->
-  <link rel="shortcut icon" href="asset/logo-icon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="styles/about.css" />
+<!-- 2. CANONICAL URL -->
+<link rel="canonical" href="https://www.guidedtechms.com/careers.html" />
+
+<!-- 3. PRIMARY META TAGS -->
+<title>Careers at Guided Tech Solutions | IT & Technology Jobs</title>
+<meta name="description" content="Join the Guided Tech Solutions team. We're hiring for IT support, cloud engineering, automation, AI consulting, and cybersecurity roles. Explore open positions and apply today." />
+<meta name="keywords" content="IT jobs Mississippi, technology careers, cloud engineer jobs, automation engineer, AI consultant jobs, cybersecurity jobs, managed IT jobs, tech company jobs, Guided Tech Solutions careers, network engineer jobs Mississippi" />
+<meta name="author" content="Guided Tech Solutions" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<!-- 4. OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.guidedtechms.com/careers.html" />
+<meta property="og:title" content="Careers at Guided Tech Solutions | IT & Technology Jobs" />
+<meta property="og:description" content="Join a team building real-world IT, automation, and cloud solutions. Explore open positions at Guided Tech Solutions." />
+<meta property="og:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Guided Tech Solutions" />
+<meta property="og:locale" content="en_US" />
+
+<!-- 5. TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.guidedtechms.com/careers.html" />
+<meta name="twitter:title" content="Careers at Guided Tech Solutions | IT & Technology Jobs" />
+<meta name="twitter:description" content="Join a team building real-world IT, automation, and cloud solutions. Explore open positions at Guided Tech Solutions." />
+<meta name="twitter:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+
+<!-- 6. FAVICON -->
+<link rel="icon" type="image/png" href="/asset/logo-icon.png" />
+<link rel="apple-touch-icon" href="/asset/logo-icon.png" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="styles/about.css" />
+
+<!-- 7. JSON-LD — JobPosting list placeholder (helps Google index job openings) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Careers at Guided Tech Solutions",
+  "url": "https://www.guidedtechms.com/careers.html",
+  "description": "Explore open IT, cloud, automation, and cybersecurity job opportunities at Guided Tech Solutions.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guided Tech Solutions",
+    "url": "https://www.guidedtechms.com/",
+    "logo": "https://www.guidedtechms.com/asset/logo-icon.png",
+    "email": "info@guidedtechms.com"
+  }
+}
+</script>
+
+<!-- 8. JSON-LD — BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.guidedtechms.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://www.guidedtechms.com/about.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Careers",
+      "item": "https://www.guidedtechms.com/careers.html"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -30,16 +105,15 @@
     </a>
 
     <!-- NAV MENU -->
-    <nav class="navbar-menu" id="navbarMenu">
+    <nav class="navbar-menu" id="navbarMenu" aria-label="Main navigation">
 
-      <!-- ✅ ADDED: MOBILE CLOSE BUTTON -->
       <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="Close menu">✕</button>
-      
+
       <a href="index.html" class="nav-link">Home</a>
 
       <!-- ABOUT -->
       <div class="nav-item">
-        <a href="#" class="nav-link nav-parent active">About</a>
+        <a href="#" class="nav-link nav-parent active" aria-current="page">About</a>
 
         <div class="mega-dropdown">
           <div class="mega-col">
@@ -149,39 +223,47 @@
 <div class="nav-overlay" id="navOverlay"></div>
 
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content container">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content container">
 
-        <div class="hero-title">
-          <p>Careers</p>
-        </div>
-
-        <p class="hero-subtitle">
-          Join our fantastic team by applying to open positions in our company
-        </p>
-
-        <div class="breadcrumbs">
-          <a href="index.html">Home</a> › <span class="page">About</span> › <span class="subpage">Careers</span>
-        </div>
-
+      <div class="hero-title">
+        <p>Careers</p>
       </div>
-    </section>
 
+      <p class="hero-subtitle">
+        Join our team and help build real-world IT, automation, and cloud solutions that make a difference.
+      </p>
 
-<main class="container careers-page">
-  <h1>Careers at Guided Tech Solutions</h1>
-  <p class="careers-intro">
-    Join a team focused on real-world engineering, automation, and scalable systems.
-  </p>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> › <a href="about.html">About</a> › <span class="subpage">Careers</span>
+      </nav>
 
-  <div id="careersGrid">
-    <div class="empty">
-      Loading openings…
     </div>
-  </div>
-</main>
+  </section>
 
+
+  <main class="container careers-page">
+
+    <h1>Careers at Guided Tech Solutions</h1>
+    <p class="careers-intro">
+      Join a team focused on real-world engineering, automation, and scalable systems. We're looking for driven people who want to build technology that actually helps businesses and organizations grow. Explore our open positions below.
+    </p>
+
+    <!-- Job listings populated by careers.js from Firebase -->
+    <div id="careersGrid" aria-live="polite" aria-label="Open job positions">
+      <div class="empty">
+        Loading openings…
+      </div>
+    </div>
+
+    <!-- Fallback CTA if no openings are listed -->
+    <div class="careers-cta" id="careersCta" style="display:none;">
+      <h2>Don't see the right role?</h2>
+      <p>We're always interested in connecting with talented people. Send your resume and a note about what you do to <a href="mailto:info@guidedtechms.com">info@guidedtechms.com</a> and we'll be in touch.</p>
+    </div>
+
+  </main>
 
 
 <!-- FOOTER -->
@@ -194,7 +276,7 @@
       <h2 class="footer-logo">Guided Tech Solutions</h2>
 
       <p class="footer-desc">
-        Empowering organizations with intelligent, 
+        Empowering organizations with intelligent,
         scalable technology, and modern digital transformation solutions.
       </p>
 
@@ -203,25 +285,23 @@
 
       <!-- Social Icons -->
       <div class="footer-social">
-        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener">
+        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener" aria-label="Facebook">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
         </a>
-      
-        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
         </a>
-      
-        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener">
+
+        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
         </a>
-      
-        <!-- FIXED: Working Skool icon -->
-        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener">
+
+        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener" aria-label="Skool">
           <img src="asset/skool-logo.png" alt="Skool">
         </a>
       </div>
     </div>
-
 
     <!-- SERVICES -->
     <div class="gts-footer-col">
@@ -236,7 +316,6 @@
       <a href="services.html#consulting">Consulting</a>
       <a href="services.html">All Services</a>
     </div>
-    
 
     <!-- RESOURCES -->
     <div class="gts-footer-col">
@@ -251,10 +330,8 @@
       <h4 class="footer-heading">ABOUT</h4>
       <a href="about.html">Company</a>
       <a href="contact.html">Contact</a>
-     </div>
+    </div>
   </div>
-
-
 
   <div class="gts-footer-bottom">
     © <span id="year"></span> Guided Tech Solutions — All rights reserved.
@@ -262,17 +339,12 @@
 
 </footer>
 
-  
-<script src="scripts/about.js"></script> 
+<script src="scripts/about.js"></script>
 <script type="module" src="admin/firebase.js"></script>
-<script type="module" src="scripts/careers.js"></script>    
-  
+<script type="module" src="scripts/careers.js"></script>
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-  
+
 </body>
 </html>
-
-
-    
