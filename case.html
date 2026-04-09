@@ -1,26 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Guided Tech Solutions — Case Study</title>
+<!-- 1. CHARACTER SET & VIEWPORT -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="Explore real results and project outcomes delivered by Guided Tech Solutions." />
-  <meta name="keywords" content="Guided Tech case study, automation results, AI transformation, technology consulting" />
-  <meta name="author" content="Guided Tech Solutions" />
+<!-- 2. CANONICAL URL -->
+<link rel="canonical" href="https://www.guidedtechms.com/casestudy.html" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="asset/logo-icon.png" />
+<!-- 3. PRIMARY META TAGS -->
+<title>Case Studies | Real Business Results | Guided Tech Solutions</title>
+<meta name="description" content="See how Guided Tech Solutions has helped businesses and organizations streamline operations, reduce costs, and grow revenue through IT support, automation, AI consulting, and cloud migration. Real results, real clients." />
+<meta name="keywords" content="IT case study, business automation results, cloud migration success story, AI consulting results, technology consulting outcomes, managed IT results, RPA case study, digital transformation case study, Guided Tech Solutions results" />
+<meta name="author" content="Guided Tech Solutions" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<!-- 4. OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.guidedtechms.com/casestudy.html" />
+<meta property="og:title" content="Case Studies | Real Business Results | Guided Tech Solutions" />
+<meta property="og:description" content="Real results from real clients. See how Guided Tech Solutions delivers measurable outcomes through IT support, automation, AI, and cloud migration." />
+<meta property="og:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Guided Tech Solutions" />
+<meta property="og:locale" content="en_US" />
 
-  <!-- Main Global CSS -->
-  <link rel="stylesheet" href="style.css" />
+<!-- 5. TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.guidedtechms.com/casestudy.html" />
+<meta name="twitter:title" content="Case Studies | Real Business Results | Guided Tech Solutions" />
+<meta name="twitter:description" content="Real results from real clients — IT support, automation, AI, and cloud migration outcomes." />
+<meta name="twitter:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
 
-  <!-- Blog CSS (your post styles live here: .post-area, .post-meta, etc.) -->
-  <link rel="stylesheet" href="styles/blog.css" />
+<!-- 6. FAVICON -->
+<link rel="icon" type="image/png" href="/asset/logo-icon.png" />
+<link rel="apple-touch-icon" href="/asset/logo-icon.png" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="styles/blog.css" />
+
+<!-- 7. JSON-LD — CollectionPage for case studies -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Case Studies — Real Business Results",
+  "url": "https://www.guidedtechms.com/casestudy.html",
+  "description": "Real project outcomes and success stories from Guided Tech Solutions clients — covering IT support, business automation, AI consulting, cloud migration, and RPA implementations.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guided Tech Solutions",
+    "url": "https://www.guidedtechms.com/",
+    "logo": "https://www.guidedtechms.com/asset/logo-icon.png"
+  }
+}
+</script>
+
+<!-- 8. JSON-LD — BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.guidedtechms.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://www.guidedtechms.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Case Studies",
+      "item": "https://www.guidedtechms.com/casestudy.html"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -37,11 +105,10 @@
     </a>
 
     <!-- NAV MENU -->
-    <nav class="navbar-menu" id="navbarMenu">
+    <nav class="navbar-menu" id="navbarMenu" aria-label="Main navigation">
 
-      <!-- ✅ ADDED: MOBILE CLOSE BUTTON -->
       <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="Close menu">✕</button>
-      
+
       <a href="index.html" class="nav-link">Home</a>
 
       <!-- ABOUT -->
@@ -103,7 +170,7 @@
 
       <!-- RESOURCES -->
       <div class="nav-item">
-        <a href="#" class="nav-link nav-parent active">Resources</a>
+        <a href="#" class="nav-link nav-parent active" aria-current="page">Resources</a>
 
         <div class="mega-dropdown">
           <div class="mega-col">
@@ -155,41 +222,54 @@
 <!-- Overlay -->
 <div class="nav-overlay" id="navOverlay"></div>
 
-    
-    <!-- CONTENT (same structure as post.html) -->
+
+    <!-- PAGE CONTENT -->
     <main class="container">
-      <div id="postArea" class="post-area">
+
+      <!-- Inline page header for SEO — visible text before dynamic content loads -->
+      <div class="post-page-header">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> › <a href="blog.html">Resources</a> › <span class="page">Case Studies</span>
+        </nav>
+        <h1>Case Studies</h1>
+        <p class="post-page-intro">Real project outcomes and success stories from Guided Tech Solutions clients — covering IT support, business automation, AI consulting, cloud migration, and RPA implementations.</p>
+      </div>
+
+      <!-- Case study content loaded dynamically by case.js -->
+      <div id="postArea" class="post-area" aria-live="polite" aria-label="Case study content">
         <div class="empty">Loading case study…</div>
       </div>
+
     </main>
 
-    <!-- FOOTER (same as blog post page) -->
+
+    <!-- FOOTER -->
     <footer class="gts-footer">
       <div class="gts-footer-inner">
 
         <div class="gts-footer-col about-col">
           <h2 class="footer-logo">Guided Tech Solutions</h2>
           <p class="footer-desc">
-           Success stories powered by innovation and execution.
+            Success stories powered by innovation and execution.
           </p>
 
           <h4 class="footer-heading">CONTACT US</h4>
           <p>info@guidedtechms.com</p>
 
           <div class="footer-social">
-            <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener">
+            <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener" aria-label="Facebook">
               <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
             </a>
 
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
               <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
             </a>
 
-            <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener">
+            <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener" aria-label="LinkedIn">
               <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
             </a>
 
-            <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener">
+            <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener" aria-label="Skool">
               <img src="asset/skool-logo.png" alt="Skool">
             </a>
           </div>
@@ -232,7 +312,7 @@
   <!-- FIREBASE + PAGE LOGIC -->
   <script type="module" src="admin/firebase.js"></script>
   <script type="module" src="scripts/case.js"></script>
-  <script src="scripts/about.js"></script>  
+  <script src="scripts/about.js"></script>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
