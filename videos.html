@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Guided Tech Solutions empowers businesses with smart, scalable, and secure technology solutions." />
-  <meta name="keywords" content="Guided Tech Solutions, technology consulting, IT infrastructure, cloud computing, cybersecurity, business automation, software development, AI, tech strategy" />
-  <meta name="author" content="Guided Tech Solutions" />
 
-  <title>Guided Tech Solutions — Smarter, Scalable Technology</title>
+<!-- 1. CHARACTER SET & VIEWPORT -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Favicon Placeholder -->
-  <link rel="shortcut icon" href="asset/logo-icon.png" />
+<!-- 2. CANONICAL URL -->
+<link rel="canonical" href="https://www.guidedtechms.com/videos.html" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<!-- 3. PRIMARY META TAGS -->
+<title>Videos | IT & Technology Tutorials & Insights | Guided Tech Solutions</title>
+<meta name="description" content="Watch videos from Guided Tech Solutions covering IT support, business automation, AI consulting, cloud migration, and RPA. Learn how smarter technology can help your business grow." />
+<meta name="keywords" content="IT support videos, business automation tutorials, AI consulting videos, cloud migration guide, RPA tutorials, technology videos, Guided Tech Solutions videos, IT training videos, business technology insights" />
+<meta name="author" content="Guided Tech Solutions" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/videos.css" />
+<!-- 4. OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.guidedtechms.com/videos.html" />
+<meta property="og:title" content="Videos | IT & Technology Tutorials & Insights | Guided Tech Solutions" />
+<meta property="og:description" content="Watch IT support, automation, AI consulting, and cloud migration videos from Guided Tech Solutions." />
+<meta property="og:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Guided Tech Solutions" />
+<meta property="og:locale" content="en_US" />
+
+<!-- 5. TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.guidedtechms.com/videos.html" />
+<meta name="twitter:title" content="Videos | IT & Technology Tutorials & Insights | Guided Tech Solutions" />
+<meta name="twitter:description" content="Watch IT support, automation, AI, and cloud migration videos from Guided Tech Solutions." />
+<meta name="twitter:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+
+<!-- 6. FAVICON -->
+<link rel="icon" type="image/png" href="/asset/logo-icon.png" />
+<link rel="apple-touch-icon" href="/asset/logo-icon.png" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="styles/videos.css" />
+
+<!-- 7. JSON-LD — CollectionPage for video library -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Video Library — IT & Technology Insights",
+  "url": "https://www.guidedtechms.com/videos.html",
+  "description": "Video library from Guided Tech Solutions covering IT support, business automation, AI consulting, cloud migration, and RPA — helping businesses grow through smarter technology.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guided Tech Solutions",
+    "url": "https://www.guidedtechms.com/",
+    "logo": "https://www.guidedtechms.com/asset/logo-icon.png"
+  }
+}
+</script>
+
+<!-- 8. JSON-LD — BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.guidedtechms.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://www.guidedtechms.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Videos",
+      "item": "https://www.guidedtechms.com/videos.html"
+    }
+  ]
+}
+</script>
 </head>
+
 <body>
   <div class="page-wrapper">
 
@@ -32,17 +104,15 @@
     </a>
 
     <!-- NAV MENU -->
-    <nav class="navbar-menu" id="navbarMenu">
+    <nav class="navbar-menu" id="navbarMenu" aria-label="Main navigation">
 
-      <!-- ✅ ADDED: MOBILE CLOSE BUTTON -->
       <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="Close menu">✕</button>
-      
+
       <a href="index.html" class="nav-link">Home</a>
 
       <!-- ABOUT -->
       <div class="nav-item">
         <a href="#" class="nav-link nav-parent">About</a>
-
         <div class="mega-dropdown">
           <div class="mega-col">
             <h4>Company</h4>
@@ -50,14 +120,12 @@
             <a href="about.html#mission"><span class="icon"></span>Mission & Vision</a>
             <a href="about.html#history"><span class="icon"></span>History</a>
           </div>
-
           <div class="mega-col">
             <h4>Team</h4>
             <a href="team.html"><span class="icon"></span>Our Team</a>
             <a href="team.html#leaders"><span class="icon"></span>Leadership</a>
             <a href="team.html#values"><span class="icon"></span>Our Values</a>
           </div>
-
           <div class="mega-col">
             <h4>More About Us</h4>
             <a href="careers.html"><span class="icon"></span>Careers</a>
@@ -68,7 +136,6 @@
       <!-- SERVICES -->
       <div class="nav-item">
         <a href="#" class="nav-link nav-parent">Services</a>
-
         <div class="mega-dropdown">
           <div class="mega-col">
             <h4>AI Solutions</h4>
@@ -76,14 +143,12 @@
             <a href="ai.html#machinelearning"><span class="icon"></span>Machine Learning</a>
             <a href="ai.html#aiautomation"><span class="icon"></span>Automation AI</a>
           </div>
-
           <div class="mega-col">
             <h4>By Tool</h4>
             <a href="automation.html"><span class="icon"></span>Automation</a>
             <a href="automation.html#rpa"><span class="icon"></span>RPA Setup</a>
             <a href="automation.html#integration"><span class="icon"></span>Integration Tools</a>
           </div>
-
           <div class="mega-col">
             <h4>Connector Development</h4>
             <a href="services.html"><span class="icon"></span>All Services</a>
@@ -98,15 +163,13 @@
 
       <!-- RESOURCES -->
       <div class="nav-item">
-        <a href="#" class="nav-link nav-parent active">Resources</a>
-
+        <a href="#" class="nav-link nav-parent active" aria-current="page">Resources</a>
         <div class="mega-dropdown">
           <div class="mega-col">
             <h4>Articles</h4>
             <a href="blog.html"><span class="icon"></span>Blogs</a>
             <a href="faq.html"><span class="icon"></span>Faqs</a>
           </div>
-
           <div class="mega-col">
             <h4>Others</h4>
             <a href="casestudy.html"><span class="icon"></span>Case Study</a>
@@ -118,14 +181,12 @@
       <!-- CONTACT -->
       <div class="nav-item">
         <a href="#" class="nav-link nav-parent">Contact</a>
-
         <div class="mega-dropdown">
           <div class="mega-col">
             <h4>Get in Touch</h4>
             <a href="contact.html"><span class="icon"></span>Contact Form</a>
             <a href="contact.html#partnership"><span class="icon"></span>Partnership</a>
           </div>
-
           <div class="mega-col">
             <h4>More</h4>
             <a href="contact.html#support"><span class="icon"></span>Support</a>
@@ -151,8 +212,7 @@
 <div class="nav-overlay" id="navOverlay"></div>
 
 
-    
- <!-- HERO -->
+<!-- HERO -->
 <section class="hero">
   <div class="hero-content container">
 
@@ -161,67 +221,60 @@
     </div>
 
     <p class="hero-subtitle">
-      Explore our video library.
+      Watch our latest videos on IT support, automation, AI consulting, and cloud migration to see how smarter technology can grow your business.
     </p>
 
-    <div class="breadcrumbs">
-      <a href="index.html">Home</a> › <span class="page">Resources</span> › <span class="subpage">Videos</span>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> › <a href="blog.html">Resources</a> › <span class="subpage">Videos</span>
+    </nav>
+  </div>
+</section>
+
+
+<main>
+  <section class="videos-page" aria-labelledby="videos-heading">
+    <div class="container">
+
+      <h1 id="videos-heading">Video Library</h1>
+      <p class="videos-intro">Browse our collection of videos covering IT support, business process automation, AI consulting, cloud migration, and RPA. Each video is designed to help you understand how technology can save time and grow your business.</p>
+
+      <!-- Video grid populated by videos.js -->
+      <div id="videoGrid" class="video-grid" aria-live="polite" aria-label="Video library"></div>
+
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 
-    
-<section class="videos-page">
-  <div class="container">
-    <h2>Videos</h2>
-
-    <div id="videoGrid" class="video-grid"></div>
-  </div>
-</section>
-
-    
- 
- <!-- FOOTER -->
+<!-- FOOTER -->
 <footer class="gts-footer">
 
   <div class="gts-footer-inner">
 
-    <!-- LEFT COLUMN -->
     <div class="gts-footer-col about-col">
       <h2 class="footer-logo">Guided Tech Solutions</h2>
-
       <p class="footer-desc">
-        Empowering organizations with intelligent, 
+        Empowering organizations with intelligent,
         scalable technology, and modern digital transformation solutions.
       </p>
-
       <h4 class="footer-heading">CONTACT US</h4>
       <p>info@guidedtechms.com</p>
-
-      <!-- Social Icons -->
       <div class="footer-social">
-        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener">
+        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener" aria-label="Facebook">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
         </a>
-      
-        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
         </a>
-      
-        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
         </a>
-      
-        <!-- FIXED: Working Skool icon -->
-        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener">
+        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener" aria-label="Skool">
           <img src="asset/skool-logo.png" alt="Skool">
         </a>
       </div>
     </div>
 
-
-    <!-- SERVICES -->
     <div class="gts-footer-col">
       <h4 class="footer-heading">SERVICES</h4>
       <a href="ai.html">AI Consulting</a>
@@ -234,9 +287,7 @@
       <a href="services.html#consulting">Consulting</a>
       <a href="services.html">All Services</a>
     </div>
-    
 
-    <!-- RESOURCES -->
     <div class="gts-footer-col">
       <h4 class="footer-heading">RESOURCES</h4>
       <a href="blog.html">Blog</a>
@@ -244,26 +295,22 @@
       <a href="videos.html">Videos</a>
     </div>
 
-    <!-- ABOUT -->
     <div class="gts-footer-col">
       <h4 class="footer-heading">ABOUT</h4>
       <a href="about.html">Company</a>
       <a href="contact.html">Contact</a>
-     </div>
+    </div>
   </div>
-
 
   <div class="gts-footer-bottom">
     © <span id="year"></span> Guided Tech Solutions — All rights reserved.
   </div>
-</footer>  
+</footer>
 
- 
- 
-<script src="scripts/videos.js"></script> 
-<script src="scripts/about.js"></script>      
+<script src="scripts/videos.js"></script>
+<script src="scripts/about.js"></script>
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
-</html> 
+</html>
