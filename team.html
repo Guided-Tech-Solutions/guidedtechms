@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Guided Tech Solutions empowers businesses with smart, scalable, and secure technology solutions." />
-  <meta name="keywords" content="Guided Tech Solutions, technology consulting, IT infrastructure, automation, AI" />
-  <meta name="author" content="Guided Tech Solutions" />
 
-  <title>Guided Tech Solutions — Our Team</title>
+<!-- 1. CHARACTER SET & VIEWPORT -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="shortcut icon" href="asset/logo-icon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/about.css" />
+<!-- 2. CANONICAL URL -->
+<link rel="canonical" href="https://www.guidedtechms.com/team.html" />
+
+<!-- 3. PRIMARY META TAGS -->
+<title>Our Team & Leadership | Guided Tech Solutions</title>
+<meta name="description" content="Meet the team and leadership behind Guided Tech Solutions — IT professionals, cloud engineers, automation specialists, and technology consultants dedicated to helping businesses and organizations grow." />
+<meta name="keywords" content="Guided Tech Solutions team, IT professionals Mississippi, technology team, cloud engineers, automation specialists, technology leadership, IT consulting team, veteran-owned tech company team" />
+<meta name="author" content="Guided Tech Solutions" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<!-- 4. OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.guidedtechms.com/team.html" />
+<meta property="og:title" content="Our Team & Leadership | Guided Tech Solutions" />
+<meta property="og:description" content="Meet the IT professionals, cloud engineers, and technology consultants powering Guided Tech Solutions." />
+<meta property="og:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Guided Tech Solutions" />
+<meta property="og:locale" content="en_US" />
+
+<!-- 5. TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.guidedtechms.com/team.html" />
+<meta name="twitter:title" content="Our Team & Leadership | Guided Tech Solutions" />
+<meta name="twitter:description" content="Meet the people powering innovation, strategy, and execution at Guided Tech Solutions." />
+<meta name="twitter:image" content="https://www.guidedtechms.com/asset/og-image.jpg" />
+
+<!-- 6. FAVICON -->
+<link rel="icon" type="image/png" href="/asset/logo-icon.png" />
+<link rel="apple-touch-icon" href="/asset/logo-icon.png" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="styles/about.css" />
+
+<!-- 7. JSON-LD — AboutPage with team reference -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Our Team & Leadership — Guided Tech Solutions",
+  "url": "https://www.guidedtechms.com/team.html",
+  "description": "Meet the IT professionals, cloud engineers, automation specialists, and technology consultants that make up the Guided Tech Solutions team.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guided Tech Solutions",
+    "url": "https://www.guidedtechms.com/",
+    "logo": "https://www.guidedtechms.com/asset/logo-icon.png",
+    "email": "info@guidedtechms.com"
+  }
+}
+</script>
+
+<!-- 8. JSON-LD — BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.guidedtechms.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://www.guidedtechms.com/about.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Our Team",
+      "item": "https://www.guidedtechms.com/team.html"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -28,17 +105,15 @@
     </a>
 
     <!-- NAV MENU -->
-    <nav class="navbar-menu" id="navbarMenu">
+    <nav class="navbar-menu" id="navbarMenu" aria-label="Main navigation">
 
-      <!-- ✅ ADDED: MOBILE CLOSE BUTTON -->
       <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="Close menu">✕</button>
-      
+
       <a href="index.html" class="nav-link">Home</a>
 
       <!-- ABOUT -->
       <div class="nav-item">
-        <a href="#" class="nav-link nav-parent active">About</a>
-
+        <a href="#" class="nav-link nav-parent active" aria-current="page">About</a>
         <div class="mega-dropdown">
           <div class="mega-col">
             <h4>Company</h4>
@@ -46,14 +121,12 @@
             <a href="about.html#mission"><span class="icon"></span>Mission & Vision</a>
             <a href="about.html#history"><span class="icon"></span>History</a>
           </div>
-
           <div class="mega-col">
             <h4>Team</h4>
             <a href="team.html"><span class="icon"></span>Our Team</a>
             <a href="team.html#leaders"><span class="icon"></span>Leadership</a>
             <a href="team.html#values"><span class="icon"></span>Our Values</a>
           </div>
-
           <div class="mega-col">
             <h4>More About Us</h4>
             <a href="careers.html"><span class="icon"></span>Careers</a>
@@ -64,7 +137,6 @@
       <!-- SERVICES -->
       <div class="nav-item">
         <a href="#" class="nav-link nav-parent">Services</a>
-
         <div class="mega-dropdown">
           <div class="mega-col">
             <h4>AI Solutions</h4>
@@ -72,14 +144,12 @@
             <a href="ai.html#machinelearning"><span class="icon"></span>Machine Learning</a>
             <a href="ai.html#aiautomation"><span class="icon"></span>Automation AI</a>
           </div>
-
           <div class="mega-col">
             <h4>By Tool</h4>
             <a href="automation.html"><span class="icon"></span>Automation</a>
             <a href="automation.html#rpa"><span class="icon"></span>RPA Setup</a>
             <a href="automation.html#integration"><span class="icon"></span>Integration Tools</a>
           </div>
-
           <div class="mega-col">
             <h4>Connector Development</h4>
             <a href="services.html"><span class="icon"></span>All Services</a>
@@ -95,14 +165,12 @@
       <!-- RESOURCES -->
       <div class="nav-item">
         <a href="#" class="nav-link nav-parent">Resources</a>
-
         <div class="mega-dropdown">
           <div class="mega-col">
             <h4>Articles</h4>
             <a href="blog.html"><span class="icon"></span>Blogs</a>
             <a href="faq.html"><span class="icon"></span>Faqs</a>
           </div>
-
           <div class="mega-col">
             <h4>Others</h4>
             <a href="casestudy.html"><span class="icon"></span>Case Study</a>
@@ -114,14 +182,12 @@
       <!-- CONTACT -->
       <div class="nav-item">
         <a href="#" class="nav-link nav-parent">Contact</a>
-
         <div class="mega-dropdown">
           <div class="mega-col">
             <h4>Get in Touch</h4>
             <a href="contact.html"><span class="icon"></span>Contact Form</a>
             <a href="contact.html#partnership"><span class="icon"></span>Partnership</a>
           </div>
-
           <div class="mega-col">
             <h4>More</h4>
             <a href="contact.html#support"><span class="icon"></span>Support</a>
@@ -147,8 +213,6 @@
 <div class="nav-overlay" id="navOverlay"></div>
 
 
-    
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content container">
@@ -156,69 +220,78 @@
     <p class="hero-subtitle">
       Meet the people powering innovation, strategy, and execution at Guided Tech Solutions.
     </p>
-
-    <div class="breadcrumbs">
-      <a href="index.html">Home</a> › <span class="page">About</span> › <span class="subpage">Our Team</span>
-    </div>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> › <a href="about.html">About</a> › <span class="subpage">Our Team</span>
+    </nav>
   </div>
 </section>
 
 
-<!-- VALUES -->
-<section id="values" class="values-section">
-  <div class="values-wrapper">
-    <h2 class="values-title">Our values</h2>
+<main>
 
-    <div class="values-grid">
-      <div class="value-row">
-        <div class="value-icon-circle">🧘‍♂️</div>
-        <div class="value-text"><h3>Respect</h3><p>We support balanced, healthy life and well-being.</p></div>
-      </div>
-      <div class="value-row">
-        <div class="value-icon-circle">😇</div>
-        <div class="value-text"><h3>Collaboration</h3><p>Partnership focused on ethical growth.</p></div>
-      </div>
-      <div class="value-row">
-        <div class="value-icon-circle">🙌</div>
-        <div class="value-text"><h3>Passion</h3><p>We bring joy, creativity, and commitment.</p></div>
-      </div>
-      <div class="value-row">
-        <div class="value-icon-circle">👌</div>
-        <div class="value-text"><h3>Agility</h3><p>Fast adaptation, high-quality results.</p></div>
+  <!-- VALUES -->
+  <section id="values" class="values-section" aria-labelledby="values-heading">
+    <div class="values-wrapper">
+      <h2 class="values-title" id="values-heading">Our Values</h2>
+
+      <div class="values-grid">
+        <div class="value-row">
+          <div class="value-icon-circle" aria-hidden="true">🧘‍♂️</div>
+          <div class="value-text">
+            <h3>Respect</h3>
+            <p>We support balanced, healthy life and well-being for every member of our team and the clients we serve.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="value-icon-circle" aria-hidden="true">😇</div>
+          <div class="value-text">
+            <h3>Collaboration</h3>
+            <p>Partnership focused on ethical growth — we succeed together with our clients and each other.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="value-icon-circle" aria-hidden="true">🙌</div>
+          <div class="value-text">
+            <h3>Passion</h3>
+            <p>We bring joy, creativity, and genuine commitment to every project we take on.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="value-icon-circle" aria-hidden="true">👌</div>
+          <div class="value-text">
+            <h3>Agility</h3>
+            <p>Fast adaptation and high-quality results — we stay flexible so your business never slows down.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- MANAGEMENT TEAM -->
-<section id="leaders" class="leaders-section">
-  <div class="container">
-    <div class="leaders-header">
-      <h2 class="leaders-title">Management Team</h2>
-      <p class="leaders-subtitle">Meet the leaders guiding Guided Tech Solutions.</p>
+  <!-- MANAGEMENT TEAM -->
+  <section id="leaders" class="leaders-section" aria-labelledby="leaders-heading">
+    <div class="container">
+      <div class="leaders-header">
+        <h2 class="leaders-title" id="leaders-heading">Management Team</h2>
+        <p class="leaders-subtitle">Meet the leaders guiding Guided Tech Solutions.</p>
+      </div>
+      <div class="leaders-grid" id="leadersGrid" aria-live="polite" aria-label="Leadership team members"></div>
     </div>
-
-    <div class="leaders-grid" id="leadersGrid"></div>
-  </div>
-</section>
+  </section>
 
 
-<!-- TEAM MEMBERS -->
-<section id="team-members" class="team-members-section">
-  <div class="team-members-container">
-
-    <div class="team-members-header">
-      <h2 class="team-members-title">Our Team</h2>
-      <p class="team-members-subtitle">The brilliant minds that push our mission forward.</p>
+  <!-- TEAM MEMBERS -->
+  <section id="team-members" class="team-members-section" aria-labelledby="team-heading">
+    <div class="team-members-container">
+      <div class="team-members-header">
+        <h2 class="team-members-title" id="team-heading">Our Team</h2>
+        <p class="team-members-subtitle">The brilliant minds that push our mission forward.</p>
+      </div>
+      <div class="team-members-grid" id="teamGrid" aria-live="polite" aria-label="Team members"></div>
     </div>
+  </section>
 
-    <div class="team-members-grid" id="teamGrid"></div>
-
-  </div>
-</section>
-
-</div>
+</main>
 
 
 <!-- FOOTER -->
@@ -226,41 +299,30 @@
 
   <div class="gts-footer-inner">
 
-    <!-- LEFT COLUMN -->
     <div class="gts-footer-col about-col">
       <h2 class="footer-logo">Guided Tech Solutions</h2>
-
       <p class="footer-desc">
-        Empowering organizations with intelligent, 
+        Empowering organizations with intelligent,
         scalable technology, and modern digital transformation solutions.
       </p>
-
       <h4 class="footer-heading">CONTACT US</h4>
       <p>info@guidedtechms.com</p>
-
-      <!-- Social Icons -->
       <div class="footer-social">
-        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener">
+        <a href="https://web.facebook.com/profile.php?id=61579123374511&sk=about" target="_blank" rel="noopener" aria-label="Facebook">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
         </a>
-      
-        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
         </a>
-      
-        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/company/guided-tech-solutions-of-mississippi/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
         </a>
-      
-        <!-- FIXED: Working Skool icon -->
-        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener">
+        <a href="https://www.skool.com/the-time-saving-business-hub-2509/about?ref=56223a1a91aa4e92911c46ddb2559c94" target="_blank" rel="noopener" aria-label="Skool">
           <img src="asset/skool-logo.png" alt="Skool">
         </a>
       </div>
     </div>
 
-
-    <!-- SERVICES -->
     <div class="gts-footer-col">
       <h4 class="footer-heading">SERVICES</h4>
       <a href="ai.html">AI Consulting</a>
@@ -273,9 +335,7 @@
       <a href="services.html#consulting">Consulting</a>
       <a href="services.html">All Services</a>
     </div>
-    
 
-    <!-- RESOURCES -->
     <div class="gts-footer-col">
       <h4 class="footer-heading">RESOURCES</h4>
       <a href="blog.html">Blog</a>
@@ -283,15 +343,12 @@
       <a href="videos.html">Videos</a>
     </div>
 
-    <!-- ABOUT -->
     <div class="gts-footer-col">
       <h4 class="footer-heading">ABOUT</h4>
       <a href="about.html">Company</a>
       <a href="contact.html">Contact</a>
-     </div>
+    </div>
   </div>
-
-
 
   <div class="gts-footer-bottom">
     © <span id="year"></span> Guided Tech Solutions — All rights reserved.
@@ -299,9 +356,9 @@
 
 </footer>
 
+
 <!-- FIRESTORE TEAM LOADER -->
 <script type="module">
-
 import { db } from "./admin/firebase.js";
 import {
   collection, getDocs
@@ -317,57 +374,49 @@ async function loadTeam() {
   const leaders = members.filter(m => m.isLeader === "on" || m.isLeader === true);
   const others = members.filter(m => !leaders.includes(m));
 
-  // Leaders
-  leadersGrid.innerHTML = leaders.map(m => `
+  leadersGrid.innerHTML = leaders.length ? leaders.map(m => `
     <div class="leader-card">
       <div class="leader-image-wrapper">
-        <img src="${m.imageUrl || 'asset/placeholder.jpg'}" class="leader-image">
+        <img src="${m.imageUrl || 'asset/placeholder.jpg'}" class="leader-image" alt="${m.name || 'Team leader'} — ${m.role || 'Leadership'} at Guided Tech Solutions" loading="lazy">
       </div>
       <div class="leader-info">
         <h3 class="leader-name">${m.name || ''}</h3>
         <p class="leader-role">${m.role || ''}</p>
-        ${
-          m.linkedin
-            ? `<a class="leader-linkedin" href="${m.linkedin}" target="_blank">
-                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
-               </a>`
-            : ""
-        }
+        ${m.linkedin
+          ? `<a class="leader-linkedin" href="${m.linkedin}" target="_blank" rel="noopener" aria-label="View ${m.name || 'team member'} on LinkedIn">
+               <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+             </a>`
+          : ""}
       </div>
     </div>
-  `).join("");
+  `).join("") : "<p>Leadership profiles coming soon.</p>";
 
-  // Team
-  teamGrid.innerHTML = others.map(m => `
+  teamGrid.innerHTML = others.length ? others.map(m => `
     <div class="team-member-card">
       <div class="team-member-img-area">
-        <img src="${m.imageUrl || 'asset/placeholder.jpg'}" class="team-member-img">
+        <img src="${m.imageUrl || 'asset/placeholder.jpg'}" class="team-member-img" alt="${m.name || 'Team member'} — ${m.role || 'Team'} at Guided Tech Solutions" loading="lazy">
       </div>
       <div class="team-member-info">
         <h3 class="team-member-name">${m.name || ''}</h3>
         <p class="team-member-role">${m.role || ''}</p>
-        ${
-          m.linkedin
-            ? `<a class="team-member-linkedin" href="${m.linkedin}" target="_blank">
-                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
-               </a>`
-            : ""
-        }
+        ${m.linkedin
+          ? `<a class="team-member-linkedin" href="${m.linkedin}" target="_blank" rel="noopener" aria-label="View ${m.name || 'team member'} on LinkedIn">
+               <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+             </a>`
+          : ""}
       </div>
     </div>
-  `).join("");
+  `).join("") : "<p>Team profiles coming soon.</p>";
 }
 
 loadTeam();
-
 </script>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
- 
-<script src="scripts/about.js"></script>  
-  
+<script src="scripts/about.js"></script>
+
 </body>
 </html>
