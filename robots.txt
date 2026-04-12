@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block portal and app pages from being indexed
+Disallow: /app/
+
+# Sitemap location
+Sitemap: https://www.guidedtechms.com/sitemap.xml
