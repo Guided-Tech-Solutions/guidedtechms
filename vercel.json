@@ -26,6 +26,8 @@
     { "source": "/admin/login", "destination": "/admin/login.html" }
   ],
   "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/resources", "destination": "/blog", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/about.html", "destination": "/about", "permanent": true },
     { "source": "/team.html", "destination": "/team", "permanent": true },
