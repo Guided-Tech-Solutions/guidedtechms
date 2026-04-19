@@ -7,99 +7,99 @@
   <!-- HOMEPAGE — highest priority -->
   <url>
     <loc>https://www.guidedtechms.com/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- CORE SERVICE PAGES — very high priority -->
   <url>
-    <loc>https://www.guidedtechms.com/services.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/services</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/ai.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/ai</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/automation.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/automation</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/capability.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/capability</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- ABOUT / COMPANY PAGES -->
   <url>
-    <loc>https://www.guidedtechms.com/about.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/about</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/team.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/team</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/careers.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/careers</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- RESOURCES -->
   <url>
-    <loc>https://www.guidedtechms.com/blog.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/blog</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/faq.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/faq</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/casestudy.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/casestudy</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/videos.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/videos</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- CONTACT -->
   <url>
-    <loc>https://www.guidedtechms.com/contact.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/contact</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/book.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/book</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.guidedtechms.com/form.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://www.guidedtechms.com/form</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
