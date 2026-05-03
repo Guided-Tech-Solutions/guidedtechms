@@ -36,7 +36,7 @@
 ------------------------------------------------------------ */
 .blog-hero {
   background: linear-gradient(135deg, #071a24 0%, #0d2a3a 60%, #143d56 100%);
-  padding: calc(var(--nav-h) + 40px) 24px 48px;
+  padding: calc(var(--nav-h) + 10px) 24px 48px;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -239,7 +239,7 @@
 .blog-main {
   background: var(--bg-page);
   min-height: 60vh;
-  padding: 40px 0 80px;
+  padding: 60px 0 80px;
 }
 
 .blog-container {
