@@ -36,7 +36,7 @@
 ------------------------------------------------------------ */
 .blog-hero {
   background: linear-gradient(135deg, #071a24 0%, #0d2a3a 60%, #143d56 100%);
-  padding: calc(var(--nav-h) + 56px) 24px 56px;
+  padding: calc(var(--nav-h) + 24px) 24px 48px;
   position: relative;
   overflow: hidden;
 }
@@ -65,7 +65,7 @@
 }
 
 .blog-hero-inner {
-  max-width: 780px;
+  max-width: 1180px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -684,7 +684,7 @@
 @media (max-width: 640px) {
 
   .blog-hero {
-    padding: calc(var(--nav-h) + 36px) 20px 44px;
+    padding: calc(var(--nav-h) + 16px) 20px 36px;
   }
 
   .blog-hero-title {
