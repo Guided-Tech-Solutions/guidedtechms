@@ -36,9 +36,10 @@
 ------------------------------------------------------------ */
 .blog-hero {
   background: linear-gradient(135deg, #071a24 0%, #0d2a3a 60%, #143d56 100%);
-  padding: calc(var(--nav-h) + 24px) 24px 48px;
+  padding: calc(var(--nav-h) + 40px) 24px 48px;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Decorative dots pattern */
@@ -65,7 +66,7 @@
 }
 
 .blog-hero-inner {
-  max-width: 1180px;
+  max-width: 700px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -75,6 +76,7 @@
 .breadcrumbs {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   font-size: 13px;
   color: rgba(255,255,255,0.5);
@@ -96,30 +98,41 @@
 
 /* Title */
 .blog-hero-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
-  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 700;
   color: #ffffff;
-  line-height: 1.15;
-  margin: 0 0 14px;
-  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+
+/* Blue underline accent like other pages */
+.blog-hero-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #3a9bd5;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 .blog-hero-sub {
   font-family: var(--font-body);
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: rgba(255,255,255,0.65);
   line-height: 1.6;
-  margin-bottom: 36px;
-  max-width: 540px;
+  margin: 16px 0 32px;
 }
 
 .blog-search-wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
   max-width: 680px;
+  margin: 0 auto;
 }
 
 .blog-search-box {
@@ -684,7 +697,7 @@
 @media (max-width: 640px) {
 
   .blog-hero {
-    padding: calc(var(--nav-h) + 16px) 20px 36px;
+    padding: calc(var(--nav-h) + 24px) 20px 36px;
   }
 
   .blog-hero-title {
