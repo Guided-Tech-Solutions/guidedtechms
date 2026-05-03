@@ -120,7 +120,7 @@ function buildQuery(startAfterSnapshot = null) {
   }
 
   /* Case-insensitive title search */
-if (activeSearch) {
+  if (activeSearch) {
     const term = activeSearch.trim().toLowerCase();
     const end = term + "\uf8ff";
 
@@ -129,10 +129,9 @@ if (activeSearch) {
 
     // Only one orderBy allowed for this type of range search
     constraints.push(orderBy("titleLower"));
-} else {
+  } else {
     constraints.push(orderBy("createdAt", "desc"));
-}
-
+  }
 
   constraints.push(limit(PAGE_SIZE));
 
@@ -269,7 +268,6 @@ if (btn && menu && overlay) {
     btn.setAttribute("aria-expanded", "true");
   };
 
-  // Hamburger toggles open/close
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -278,24 +276,20 @@ if (btn && menu && overlay) {
     else openMenu();
   });
 
-  // Close button closes
   closeBtn?.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
     closeMenu();
   });
 
-  // ✅ FIX: only close if the actual overlay backdrop was clicked
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) closeMenu();
   });
 
-  // Clicking inside menu should NOT close overlay
   menu.addEventListener("click", (e) => {
     e.stopPropagation();
   });
 
-  // Dropdown toggles for nav parents
   menu.querySelectorAll(".nav-parent").forEach(link => {
     link.addEventListener("click", function(e) {
       e.preventDefault();
@@ -315,14 +309,12 @@ if (btn && menu && overlay) {
     });
   });
 
-  // Close when clicking normal links
   menu.querySelectorAll(".nav-link:not(.nav-parent)").forEach(link => {
     link.addEventListener("click", () => {
       closeMenu();
     });
   });
 
-  // Escape key closes
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && menu.classList.contains("open")) {
       closeMenu();
