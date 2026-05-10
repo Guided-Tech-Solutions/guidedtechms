@@ -542,25 +542,38 @@ body {
 
 
 /* ------------------------------------------------
-   VIDEOS PAGE
+   VIDEOS PAGE  ← SPACING FIX APPLIED HERE
 ------------------------------------------------- */
 .videos-page {
-  padding: 80px 0;
+  padding: 80px 0 100px;
   background: #fff;
+  flex: 1;
 }
 
-.videos-page h2 {
-  font-size: 2.2rem;
+/* H1 heading */
+#videos-heading {
+  font-size: 2rem;
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
+/* Intro paragraph — key fix: large bottom margin before the grid */
+.videos-intro {
+  font-size: 1rem;
+  color: #4a6a82;
+  max-width: 760px;
+  margin: 0 auto 48px;   /* ← 48px gap between text and video cards */
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* Video grid */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 24px;
+  gap: 28px;
 }
 
 .video-card {
@@ -570,11 +583,13 @@ body {
   box-shadow: 0 10px 30px rgba(27,79,114,.12);
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  outline: none;
 }
 
-.video-card:hover {
+.video-card:hover,
+.video-card:focus-visible {
   transform: translateY(-4px);
-  box-shadow: 0 14px 36px rgba(27,79,114,.18);
+  box-shadow: 0 18px 40px rgba(27,79,114,.18);
 }
 
 .video-card iframe {
@@ -591,364 +606,7 @@ body {
 }
 
 
-
-
-/* FOOTER BOTTOM */
-.gts-footer {
-  background: linear-gradient(135deg, #071a24 0%, #0d2a3a 100%);
-  background-size: cover;
-  padding: 80px 0 40px;
-  color: rgba(255,255,255,0.85);
-}
-
-
-.gts-footer-inner {
-  width: 90%;
-  max-width: 1400px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1.7fr 1fr 1fr 1fr;
-  gap: 60px;
-}
-
-.footer-logo {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 12px;
-}
-
-/* Headings */
-.footer-heading {
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: #F39C12; /* gold accent */
-  margin: 25px 0 12px;
-}
-
-.footer-heading.mt20 {
-  margin-top: 20px;
-}
-
-/* Description */
-.footer-desc {
-  max-width: 320px;
-  line-height: 1.6;
-  font-size: 15px;
-  opacity: 0.9;
-}
-
-/* Footer Links */
-.gts-footer-col a {
-  display: block;
-  font-size: 15px;
-  text-decoration: none;
-  color: rgba(255,255,255,0.75);
-  transition: 0.2s;
-}
-
-.gts-footer-col a:hover {
-  color: #fff;
-  transform: translateX(4px);
-}
-
-/* Social Icons */
-.footer-social {
-  display: flex;
-  gap: 14px;
-  margin-top: 18px;
-}
-
-.footer-social img {
-  width: 22px;
-  opacity: 0.8;
-  transition: 0.2s;
-  filter: brightness(0) invert(1); /* ← FORCES WHITE ICON */
-}
-
-.footer-social img:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-
-
-/* Footer Bottom */
-.gts-footer-bottom {
-  margin-top: 60px;
-  text-align: center;
-  padding-top: 30px;
-  font-size: 14px;
-  color: rgba(255,255,255,0.6);
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-/* Responsive */
-@media (max-width: 1100px) {
-  .gts-footer-inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 700px) {
-  .gts-footer-inner {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* ═══════════════════════════════════════════════════════════════════
-   VIDEOS PAGE MOBILE RESPONSIVE CSS
-═══════════════════════════════════════════════════════════════════ */
-
-@media (max-width: 767px) {
-  
-  /* HERO */
-  .hero {
-    padding: 100px 0 50px;
-  }
-  
-  .hero-title p {
-    font-size: 1.8rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 0.9rem;
-  }
-  
-  .breadcrumbs {
-    font-size: 0.85rem;
-  }
-  
-  /* VIDEOS PAGE */
-  .videos-page {
-    padding: 50px 0;
-  }
-  
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  
-  .videos-page h2 {
-    font-size: 1.6rem;
-    margin-bottom: 30px;
-  }
-  
-  .video-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .video-card iframe {
-    height: 180px;
-  }
-  
-  .video-title {
-    font-size: 0.95rem;
-    padding: 10px 12px;
-  }
-  
-  /* ═══════════════════════════════════════════════════════════
-     FOOTER - EXACT MATCH TO OTHER PAGES
-  ═══════════════════════════════════════════════════════════ */
-  
-  .gts-footer {
-    padding: 50px 0 25px;
-  }
-  
-  .gts-footer-inner {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 16px !important;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-  }
-  
-  .gts-footer-col.about-col {
-    grid-column: span 2;
-    order: 0;
-    margin-bottom: 10px;
-  }
-  
-  .gts-footer-col:nth-child(2) {
-    order: 1;
-  }
-  
-  .gts-footer-col:nth-child(3) {
-    order: 2;
-  }
-  
-  .gts-footer-col:nth-child(4) {
-    order: 3;
-  }
-  
-  .footer-logo {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-  }
-  
-  .footer-desc {
-    font-size: 0.9rem;
-    max-width: 100%;
-    margin-bottom: 12px;
-  }
-  
-  .footer-heading {
-    font-size: 12px;
-    margin: 0 0 8px 0;
-  }
-  
-  .about-col .footer-heading {
-    margin-top: 14px;
-  }
-  
-  .gts-footer-col:not(.about-col) .footer-heading {
-    margin-top: 0;
-  }
-  
-  .footer-heading.mt20 {
-    margin-top: 16px !important;
-  }
-  
-  .gts-footer-col a {
-    font-size: 0.9rem !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 2 !important;
-  }
-  
-  .footer-social {
-    margin-top: 12px;
-    gap: 12px !important;
-  }
-  
-  .footer-social a {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .footer-social img {
-    width: 19px;
-  }
-  
-  .gts-footer-bottom {
-    margin-top: 30px;
-    padding-top: 20px;
-    font-size: 0.8rem;
-  }
-}
-
-/* SMALL MOBILE */
-@media (max-width: 480px) {
-  .hero {
-    padding: 90px 0 40px;
-  }
-  
-  .hero-title p {
-    font-size: 1.5rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 0.85rem;
-  }
-  
-  .videos-page {
-    padding: 40px 0;
-  }
-  
-  .container {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-  
-  .videos-page h2 {
-    font-size: 1.4rem;
-    margin-bottom: 25px;
-  }
-  
-  .video-grid {
-    gap: 16px;
-  }
-  
-  .video-card iframe {
-    height: 160px;
-  }
-  
-  .video-title {
-    font-size: 0.9rem;
-    padding: 9px 10px;
-  }
-}
-
-/* EXTRA SMALL MOBILE */
-@media (max-width: 360px) {
-  .hero {
-    padding: 85px 0 35px;
-  }
-  
-  .hero-title p {
-    font-size: 1.3rem;
-  }
-  
-  .videos-page {
-    padding: 35px 0;
-  }
-  
-  .container {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-  
-  .videos-page h2 {
-    font-size: 1.3rem;
-  }
-  
-  .video-grid {
-    gap: 14px;
-  }
-}
-
-
-
-
-
-/* ============================================================
-   VIDEOS PAGE — append this block to your videos.css
-   (or paste inside the existing file, after your .video-card rule)
-   ============================================================ */
-
-/* ── Video Section wrapper ───────────────────────────────────── */
-.videos-page {
-  padding: 60px 0 80px;
-}
-
-.videos-page h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 32px;
-}
-
 /* ── Card: thumbnail-first layout ───────────────────────────── */
-.video-card {
-  background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(27,79,114,.12);
-  cursor: pointer;
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-  outline: none;
-}
-
-.video-card:hover,
-.video-card:focus-visible {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(27,79,114,.18);
-}
-
 .vc-thumb-wrap {
   position: relative;
   width: 100%;
@@ -1133,6 +791,319 @@ body {
 }
 
 
+/* FOOTER */
+.gts-footer {
+  background: linear-gradient(135deg, #071a24 0%, #0d2a3a 100%);
+  background-size: cover;
+  padding: 80px 0 40px;
+  color: rgba(255,255,255,0.85);
+}
+
+.gts-footer-inner {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.footer-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+/* Headings */
+.footer-heading {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #F39C12;
+  margin: 25px 0 12px;
+}
+
+.footer-heading.mt20 {
+  margin-top: 20px;
+}
+
+/* Description */
+.footer-desc {
+  max-width: 320px;
+  line-height: 1.6;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* Footer Links */
+.gts-footer-col a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.75);
+  transition: 0.2s;
+}
+
+.gts-footer-col a:hover {
+  color: #fff;
+  transform: translateX(4px);
+}
+
+/* Social Icons */
+.footer-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.footer-social img {
+  width: 22px;
+  opacity: 0.8;
+  transition: 0.2s;
+  filter: brightness(0) invert(1);
+}
+
+.footer-social img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.gts-footer-bottom {
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .gts-footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .gts-footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   VIDEOS PAGE MOBILE RESPONSIVE CSS
+═══════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 767px) {
+
+  /* HERO */
+  .hero {
+    padding: 100px 0 50px;
+  }
+
+  .hero-title p {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .breadcrumbs {
+    font-size: 0.85rem;
+  }
+
+  /* VIDEOS PAGE */
+  .videos-page {
+    padding: 50px 0 60px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  #videos-heading {
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+  }
+
+  .videos-intro {
+    font-size: 0.9rem;
+    margin-bottom: 36px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .video-card iframe {
+    height: 180px;
+  }
+
+  .video-title {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  /* FOOTER */
+  .gts-footer {
+    padding: 50px 0 25px;
+  }
+
+  .gts-footer-inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+
+  .gts-footer-col.about-col {
+    grid-column: span 2;
+    order: 0;
+    margin-bottom: 10px;
+  }
+
+  .gts-footer-col:nth-child(2) { order: 1; }
+  .gts-footer-col:nth-child(3) { order: 2; }
+  .gts-footer-col:nth-child(4) { order: 3; }
+
+  .footer-logo {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .footer-desc {
+    font-size: 0.9rem;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .footer-heading {
+    font-size: 12px;
+    margin: 0 0 8px 0;
+  }
+
+  .about-col .footer-heading {
+    margin-top: 14px;
+  }
+
+  .gts-footer-col:not(.about-col) .footer-heading {
+    margin-top: 0;
+  }
+
+  .footer-heading.mt20 {
+    margin-top: 16px !important;
+  }
+
+  .gts-footer-col a {
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 2 !important;
+  }
+
+  .footer-social {
+    margin-top: 12px;
+    gap: 12px !important;
+  }
+
+  .footer-social a {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .footer-social img {
+    width: 19px;
+  }
+
+  .gts-footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .hero {
+    padding: 90px 0 40px;
+  }
+
+  .hero-title p {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .videos-page {
+    padding: 40px 0 60px;
+  }
+
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  #videos-heading {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .videos-intro {
+    font-size: 0.85rem;
+    margin-bottom: 28px;
+  }
+
+  .video-grid {
+    gap: 16px;
+  }
+
+  .video-card iframe {
+    height: 160px;
+  }
+
+  .video-title {
+    font-size: 0.9rem;
+    padding: 9px 10px;
+  }
+}
+
+/* EXTRA SMALL MOBILE */
+@media (max-width: 360px) {
+  .hero {
+    padding: 85px 0 35px;
+  }
+
+  .hero-title p {
+    font-size: 1.3rem;
+  }
+
+  .videos-page {
+    padding: 35px 0 50px;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  #videos-heading {
+    font-size: 1.3rem;
+  }
+
+  .video-grid {
+    gap: 14px;
+  }
+}
 
 
 html, body {
