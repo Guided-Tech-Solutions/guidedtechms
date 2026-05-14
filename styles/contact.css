@@ -57,7 +57,7 @@ img, video, svg, canvas {
   display: block;
 }
 
-/* 4) Fix the classic mobile “100vw causes overflow” issue */
+/* 4) Fix the classic mobile "100vw causes overflow" issue */
 :root {
   --safe-vw: 100%;
 }
@@ -67,8 +67,6 @@ img, video, svg, canvas {
   max-width: 100%;
 }
 
-/* If you personally used width:100vw anywhere, convert it to 100% (recommended).
-   But this helps protect you even if you miss one. */
 body {
   position: relative;
 }
@@ -109,7 +107,7 @@ body {
   display:flex;
   align-items:center;
   background:linear-gradient(135deg,#071a24 0%,#0d2a3a 100%);
-  z-index:4000; /* keep above overlay */
+  z-index:4000;
 }
 
 .navbar-container{
@@ -183,17 +181,15 @@ body {
 
 /* =========================
    OVERLAY (GLOBAL)
-   ✅ NO filter / NO blur / NO tint
-   ✅ Only used to close on outside click
 ========================= */
 .nav-overlay{
   position:fixed;
   inset:0;
-  background:transparent;     /* IMPORTANT: no dark/white overlay */
+  background:transparent;
   opacity:0;
   pointer-events:none;
   transition:opacity 0.2s ease;
-  z-index:2000;               /* BELOW menu + below navbar */
+  z-index:2000;
 }
 
 .nav-overlay.show{
@@ -267,16 +263,12 @@ body {
 }
 
 /* =========================
-   MOBILE ONLY — MATCH YOUR SERVICES-PRICING
-   ✅ Menu sits BELOW navbar (top: 78px)
-   ✅ Links clickable
-   ✅ Dropdown opens with .nav-item.open
+   MOBILE ONLY
 ========================= */
 @media (max-width:1024px){
 
   .menu-toggle{ display:flex; }
 
-  /* Make logo + buttons smaller on mobile */
   .logo-text{ font-size:14px; }
 
   .btn-primary{
@@ -287,44 +279,37 @@ body {
 
   .navbar-actions{ gap:10px; }
 
-  /* MENU PANEL */
   .navbar-menu{
     position:fixed;
-    top:78px;                      /* ✅ BELOW NAVBAR */
+    top:78px;
     right:0;
     width:min(85vw,360px);
-    height:calc(100dvh - 78px);    /* ✅ fits remaining screen */
+    height:calc(100dvh - 78px);
     background:#0b1220;
     overflow-y:auto;
-
-    z-index:3000;                  /* ✅ ABOVE overlay */
+    z-index:3000;
     transform:translateX(105%);
     transition:transform 0.25s ease;
-
     display:flex;
     flex-direction:column;
-
-    padding:0;                     /* no weird offsets */
-    pointer-events:auto;           /* ✅ clickable */
+    padding:0;
+    pointer-events:auto;
   }
 
   .navbar-menu.open{ transform:translateX(0); }
 
-  /* ✅ REMOVE ANY EXTERNAL X (pseudo close icon) */
   .navbar-menu::before,
   .navbar-menu::after{
     content:none !important;
     display:none !important;
   }
 
-  /* ✅ Close button INSIDE menu (the one you want) */
   .mobile-nav-close{
     display:none;
     position:sticky;
     top:0;
     width:100%;
     text-align:right;
-
     background:rgba(11,18,32,0.95);
     color:#fff;
     border:none;
@@ -338,12 +323,10 @@ body {
     display:block;
   }
 
-  /* Give the first link breathing room under the close button */
   .navbar-menu .nav-link:first-of-type{
     margin-top:6px;
   }
 
-  /* LINKS */
   .nav-link{
     width:100%;
     padding:18px 22px;
@@ -352,13 +335,11 @@ body {
     color:#ffffff;
     text-decoration:none;
     border-bottom:1px solid rgba(255,255,255,0.12);
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     transition:padding 0.25s ease;
-    pointer-events:auto;           /* ✅ clickable */
+    pointer-events:auto;
   }
 
   .nav-link:hover{
@@ -367,7 +348,6 @@ body {
 
   .nav-item{ display:block; }
 
-  /* DROPDOWN PARENT ARROW */
   .nav-parent{ cursor:pointer; }
 
   .nav-parent::after{
@@ -383,7 +363,6 @@ body {
     transform:rotate(90deg);
   }
 
-  /* ✅ DROPDOWN CONTENT — this is what makes it OPEN */
   .mega-dropdown{
     display:none;
     background:rgba(255,255,255,0.06);
@@ -391,7 +370,7 @@ body {
     padding:0;
     margin:12px 18px 8px;
     border:1px solid rgba(255,255,255,0.10);
-    pointer-events:auto;           /* ✅ clickable */
+    pointer-events:auto;
   }
 
   .nav-item.open .mega-dropdown{
@@ -399,7 +378,6 @@ body {
     padding:18px 20px;
   }
 
-  /* Dropdown links */
   .mega-col{ margin-bottom:18px; }
 
   .mega-col h4{
@@ -423,7 +401,7 @@ body {
     border-radius:8px;
     transition:all 0.25s ease;
     font-weight:500;
-    pointer-events:auto;           /* ✅ clickable */
+    pointer-events:auto;
   }
 
   .mega-col a:hover{
@@ -593,6 +571,8 @@ body {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-card:hover {
@@ -622,9 +602,17 @@ body {
 .contact-card h3 {
   font-size: 18px;
   font-weight: 600;
-  padding: 22px;
+  padding: 22px 22px 10px;
   line-height: 1.4;
   color: #0f2f45;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #6b7780;
+  padding: 0 22px 16px;
+  line-height: 1.6;
+  flex: 1;
 }
 
 .card-link {
@@ -643,9 +631,7 @@ body {
 
 
 
-
-
-/* FOOTER BOTTOM */
+/* FOOTER */
 .gts-footer {
   background: linear-gradient(135deg, #071a24 0%, #0d2a3a 100%);
   background-size: cover;
@@ -668,7 +654,7 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 600;
-  color: #F39C12; /* gold accent */
+  color: #F39C12;
   margin: 25px 0 12px;
 }
 
@@ -706,15 +692,13 @@ body {
   width: 22px;
   opacity: 0.8;
   transition: 0.2s;
-  filter: brightness(0) invert(1); /* ← FORCES WHITE ICON */
+  filter: brightness(0) invert(1);
 }
 
 .footer-social img:hover {
   opacity: 1;
   transform: scale(1.1);
 }
-
-
 
 /* Footer Bottom */
 .gts-footer-bottom {
@@ -743,16 +727,11 @@ body {
 
 
 /* ═══════════════════════════════════════════════════════════════════
-   CONTACT/CAREERS PAGE MOBILE RESPONSIVE CSS
-   Paste this at the END of styles/contact.css
+   CONTACT PAGE MOBILE RESPONSIVE CSS
 ═══════════════════════════════════════════════════════════════════ */
 
 @media (max-width: 767px) {
-  
-  /* ═══════════════════════════════════════════════════════════
-     UNIFORM CONTAINER PADDING - EQUAL LEFT/RIGHT SPACING
-  ═══════════════════════════════════════════════════════════ */
-  
+
   .container,
   .navbar-container {
     padding-left: 16px !important;
@@ -760,111 +739,97 @@ body {
     max-width: 100%;
     overflow-x: hidden;
   }
-  
-  /* ═══════════════════════════════════════════════════════════
-     HERO SECTION - More top padding to clear navbar
-  ═══════════════════════════════════════════════════════════ */
-  
+
   .hero {
     padding: 100px 16px 50px 16px;
   }
-  
+
   .hero-title p {
     font-size: 1.8rem;
     margin-bottom: 30px;
   }
-  
+
   .hero-title p::after {
     width: 80px;
     height: 3px;
     bottom: -10px;
   }
-  
+
   .hero-subtitle {
     font-size: 0.9rem;
     line-height: 1.6;
     margin: 0 auto 25px;
     padding: 0 10px;
   }
-  
+
   .breadcrumbs {
     font-size: 0.85rem;
   }
-  
-  /* ═══════════════════════════════════════════════════════════
-     CONTACT OPTIONS GRID - 2 CARDS PER ROW on mobile
-  ═══════════════════════════════════════════════════════════ */
-  
+
   .contact-options {
     padding: 50px 16px;
   }
-  
+
   .contact-head {
     margin-bottom: 35px;
   }
-  
+
   .contact-head h2 {
     font-size: 1.8rem;
     margin-bottom: 8px;
   }
-  
+
   .contact-head h2::after {
     height: 3px;
     bottom: -5px;
   }
-  
+
   .contact-head p {
     font-size: 0.9rem;
     margin-top: 12px;
     padding: 0 10px;
   }
-  
-  /* ═══════════════════════════════════════════════════════════
-     CONTACT GRID - 2 CARDS PER ROW
-  ═══════════════════════════════════════════════════════════ */
-  
+
   .contact-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 14px;
     max-width: 100%;
     padding: 0;
   }
-  
-  /* ═══════════════════════════════════════════════════════════
-     CONTACT CARDS - Optimized for 2-column mobile layout
-  ═══════════════════════════════════════════════════════════ */
-  
+
   .contact-card {
     border-radius: 12px;
   }
-  
+
   .card-top {
     padding: 20px;
   }
-  
+
   .card-top .icon {
     font-size: 26px;
   }
-  
+
   .contact-card h3 {
     font-size: 1rem;
-    padding: 18px 14px;
+    padding: 18px 14px 8px;
     line-height: 1.4;
   }
-  
+
+  .contact-card p {
+    font-size: 0.85rem;
+    padding: 0 14px 12px;
+    line-height: 1.5;
+  }
+
   .card-link {
     padding: 0 14px 20px;
     font-size: 0.9rem;
   }
-  
-  /* ═══════════════════════════════════════════════════════════
-     FOOTER - 2-column layout with EQUAL spacing (matches about page)
-  ═══════════════════════════════════════════════════════════ */
-  
+
   .gts-footer {
     padding: 50px 0 25px;
   }
-  
+
   .gts-footer-inner {
     width: 100%;
     max-width: 100%;
@@ -873,40 +838,39 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 20px;
   }
-  
-  /* Company info spans full width */
+
   .gts-footer-col.about-col {
     grid-column: span 2;
   }
-  
+
   .footer-logo {
     font-size: 1.2rem;
   }
-  
+
   .footer-desc {
     font-size: 0.9rem;
     max-width: 100%;
   }
-  
+
   .footer-heading {
     font-size: 12px;
     margin: 18px 0 8px;
   }
-  
+
   .gts-footer-col a {
     font-size: 0.9rem;
     margin-bottom: 6px;
   }
-  
+
   .footer-social {
     gap: 12px;
     margin-top: 15px;
   }
-  
+
   .footer-social img {
     width: 19px;
   }
-  
+
   .gts-footer-bottom {
     margin-top: 40px;
     padding-top: 20px;
@@ -918,87 +882,91 @@ body {
    SMALL MOBILE (max-width: 480px)
 ═══════════════════════════════════════════════════════════════════ */
 @media (max-width: 480px) {
-  
-  /* EQUAL LEFT/RIGHT SPACING FOR ALL SECTIONS */
+
   .container,
   .navbar-container {
     padding-left: 14px !important;
     padding-right: 14px !important;
   }
-  
+
   .hero {
     padding: 90px 14px 45px 14px;
   }
-  
+
   .hero-title p {
     font-size: 1.6rem;
   }
-  
+
   .hero-subtitle {
     font-size: 0.85rem;
   }
-  
+
   .contact-options {
     padding: 40px 14px;
   }
-  
+
   .contact-head h2 {
     font-size: 1.6rem;
   }
-  
+
   .contact-head p {
     font-size: 0.85rem;
   }
-  
+
   .contact-grid {
     gap: 12px;
   }
-  
+
   .card-top {
     padding: 18px;
   }
-  
+
   .card-top .icon {
     font-size: 24px;
   }
-  
+
   .contact-card h3 {
     font-size: 0.95rem;
-    padding: 16px 12px;
+    padding: 16px 12px 8px;
   }
-  
+
+  .contact-card p {
+    font-size: 0.82rem;
+    padding: 0 12px 10px;
+  }
+
   .card-link {
     font-size: 0.85rem;
     padding: 0 12px 18px;
   }
-  
+
   .gts-footer {
     padding: 45px 0 20px;
   }
-  
+
   .gts-footer-inner {
     width: 100%;
     padding: 0 14px;
     gap: 35px 16px;
   }
-  
+
   .footer-logo {
     font-size: 1.1rem;
   }
-  
+
   .footer-desc {
     font-size: 0.85rem;
   }
-  
+
   .footer-heading {
     font-size: 11px;
     margin: 16px 0 6px;
   }
-  
+
   .gts-footer-col a {
     font-size: 0.85rem;
   }
-  
+
   .footer-social img {
     width: 18px;
   }
@@ -1008,73 +976,73 @@ body {
    EXTRA SMALL MOBILE (max-width: 360px)
 ═══════════════════════════════════════════════════════════════════ */
 @media (max-width: 360px) {
-  
-  /* EQUAL LEFT/RIGHT SPACING FOR ALL SECTIONS */
+
   .container,
   .navbar-container {
     padding-left: 12px !important;
     padding-right: 12px !important;
   }
-  
+
   .hero {
     padding: 85px 12px 40px 12px;
   }
-  
+
   .hero-title p {
     font-size: 1.4rem;
   }
-  
+
   .hero-subtitle {
     font-size: 0.8rem;
   }
-  
+
   .contact-options {
     padding: 35px 12px;
   }
-  
+
   .contact-head h2 {
     font-size: 1.4rem;
   }
-  
+
   .contact-head p {
     font-size: 0.8rem;
   }
-  
+
   .contact-grid {
     gap: 10px;
   }
-  
+
   .card-top {
     padding: 16px;
   }
-  
+
   .card-top .icon {
     font-size: 22px;
   }
-  
+
   .contact-card h3 {
     font-size: 0.9rem;
-    padding: 14px 10px;
+    padding: 14px 10px 6px;
   }
-  
+
+  .contact-card p {
+    font-size: 0.8rem;
+    padding: 0 10px 10px;
+  }
+
   .card-link {
     font-size: 0.8rem;
     padding: 0 10px 16px;
   }
-  
-  .card-link {
-    font-size: 0.85rem;
-  }
-  
+
   .gts-footer {
     padding: 40px 0 18px;
   }
-  
+
   .gts-footer-inner {
     padding: 0 12px;
   }
 }
 
 /* ═══════════════════════════════════════════════════════════════════
-   END OF CONTACT/CAREERS PAGE MOBILE CSS
+   END OF CONTACT PAGE CSS
 ═══════════════════════════════════════════════════════════════════ */
